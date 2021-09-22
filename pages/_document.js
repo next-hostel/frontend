@@ -11,6 +11,8 @@ class MyDocument extends Document {
 
         <script src="https://kit.fontawesome.com/8be3ae5bea.js" crossorigin="anonymous"></script>
 
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
        
         </Head>
 

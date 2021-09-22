@@ -78,13 +78,23 @@ const navbar = () => {
 
 
                 <div className={styles.element}>
-                    <div className={styles.hostelEle}>Hostel</div>
-                    <div className={styles.hostelEle}>PG</div>
-                    <div className={styles.hostelEle}>Mess</div>
+                    <div className={styles.hostelEle}>
+                        <Link href="">Hostel</Link>
+                        
+                    </div>
+
+                    <div className={styles.hostelEle}>
+                        <Link href="/">PG</Link>
+                    </div>
+
+                    <div className={styles.hostelEle}>
+                        <Link href="/">Mess</Link>
+                    </div>
 
 
 
                 </div>
+
 
                 <div className={styles.wrraper}>
                     <div className={styles.searchBtn}>
