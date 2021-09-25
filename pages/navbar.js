@@ -1,10 +1,16 @@
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
+import Carousel from 'react-elastic-carousel'
+
+
 
 
 const navbar = () => {
 
+    const breakPoints = [
+        { width: 800, itemsToShow: 3 }
+    ]
 
 
     return (
@@ -14,6 +20,11 @@ const navbar = () => {
             <div className={styles.nav}>
                 <div className={styles.add} >
                     <h1>add</h1>
+                    <div className={styles.signinUpbtn}>
+                        <button className={styles.btnLogin}>login</button>
+                        <button className={styles.btnSignup}>signup</button>
+
+                    </div>
                 </div>
 
 
@@ -80,7 +91,7 @@ const navbar = () => {
                 <div className={styles.element}>
                     <div className={styles.hostelEle}>
                         <Link href="">Hostel</Link>
-                        
+
                     </div>
 
                     <div className={styles.hostelEle}>
@@ -108,6 +119,37 @@ const navbar = () => {
 
 
             </div>
+            <div className={styles.carousel}>
+                <Carousel breakPoints={breakPoints} >
+                    <div className="">
+                        <div className={styles.carEle}></div>
+                        <span>Hostel</span>
+
+                    </div>
+
+                    <div className="">
+                        <div className={styles.carEle}></div>
+                        <span>Hostel</span>
+
+                    </div>
+                    <div className="">
+                        <div className={styles.carEle}></div>
+                        <span>Hostel</span>
+
+                    </div>
+                    <div className="">
+                        <div className={styles.carEle}></div>
+                        <span>Hostel</span>
+
+                    </div>
+
+
+
+                </Carousel>
+            </div>
+
+
+
 
 
 

@@ -17,3 +17,25 @@ a {
   padding: 0;
   
 }
+
+.rec-arrow-left{
+  display: none;
+}
+
+.rec-arrow-right{
+  display: none;
+}
+
+.rec-dot{
+  display: none;
+}
+
+.eQpvzW{
+  justify-content: flex-start;
+  width: fit-content !important;
+}
+
+.rec-carousel-item{
+  padding-left: 8% ;
+  padding-right: 8%;
+}
