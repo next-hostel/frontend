@@ -6,17 +6,24 @@ import Carousel from 'react-elastic-carousel'
 
 
 
-const navbar = () => {
+const Navbar = () => {
 
     const breakPoints = [
         { width: 800, itemsToShow: 3 }
     ]
+
+    const carObject = ["Hostel", "Mess", "PG","Blog","Harsh","Raman","Pragati"];
+
 
 
     return (
 
 
         <>
+
+            {/* sidebar start mobile view */}
+
+
             <div className={styles.nav}>
                 <div className={styles.add} >
                     <h1>add</h1>
@@ -36,7 +43,7 @@ const navbar = () => {
 
                         <li className={styles.listItems}>
 
-                            <Link href="">
+                            <Link href="/">
 
                                 <a className={styles.linkStyle}>
                                     <span className={styles.title} >Hostels</span>
@@ -47,7 +54,7 @@ const navbar = () => {
 
                         <li className={styles.listItems}>
 
-                            <Link href="">
+                            <Link href="/">
 
                                 <a className={styles.linkStyle}>
                                     <span className={styles.title} >PG</span>
@@ -58,7 +65,7 @@ const navbar = () => {
                         </li>
 
                         <li className={styles.listItems}>
-                            <Link href="">
+                            <Link href="/">
 
                                 <a className={styles.linkStyle}>
                                     <span className={styles.title} >Mess</span>
@@ -75,6 +82,12 @@ const navbar = () => {
 
             </div>
 
+
+            {/* sidebar ends mobile view */}
+
+
+            {/* navbar  */}
+
             <div className={styles.navabar}>
 
                 <div className={styles.wrraper}>
@@ -82,15 +95,17 @@ const navbar = () => {
                         <span><i className="fas fa-bars"></i></span>
                     </div>
 
-                    <div className={styles.navBrand}>Raman</div>
+                    <div className={styles.navBrand}>Hostel</div>
 
                 </div>
 
 
 
                 <div className={styles.element}>
+
+
                     <div className={styles.hostelEle}>
-                        <Link href="">Hostel</Link>
+                        <Link href="/">Hostel</Link>
 
                     </div>
 
@@ -108,6 +123,8 @@ const navbar = () => {
 
 
                 <div className={styles.wrraper}>
+
+
                     <div className={styles.searchBtn}>
                         <span><i className="fas fa-search"></i></span>
                     </div>
@@ -119,34 +136,66 @@ const navbar = () => {
 
 
             </div>
+            {/* navbar ends */}
+
+            {/* carosel mobile view */}
+
             <div className={styles.carousel}>
+
                 <Carousel breakPoints={breakPoints} >
-                    <div className="">
-                        <div className={styles.carEle}></div>
-                        <span>Hostel</span>
 
-                    </div>
+              
 
-                    <div className="">
-                        <div className={styles.carEle}></div>
-                        <span>Hostel</span>
-
-                    </div>
-                    <div className="">
-                        <div className={styles.carEle}></div>
-                        <span>Hostel</span>
-
-                    </div>
-                    <div className="">
-                        <div className={styles.carEle}></div>
-                        <span>Hostel</span>
-
-                    </div>
-
+                    {
+                        carObject.map((ele) => [
+                            <div className="">
+                            <div className={styles.carEle}></div>
+                            <span>{ele}</span>
+    
+                        </div>
+                        ]
+                        )
+                    }
 
 
                 </Carousel>
+
+
             </div>
+
+            {/* carosel mobile view ends    */}
+
+
+            {/* search bar starts */}
+
+            <div className={styles.searchDiv}>
+                <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
+                <div className={styles.searchBar}>
+
+                    <fieldset className={styles.seFieldset}>
+
+                        <input className={styles.seInput} type="text" placeholder="Search by city , hostel, or neighborhood" />
+
+                    </fieldset>
+
+                    <fieldset className={styles.seFieldset}>
+
+                        <input className={styles.seDate} type="date" min="2018-01-01" max="2019-01-01" />
+
+                    </fieldset>
+
+                    <fieldset className={styles.seFieldset}>
+
+                        <button className={styles.search}>Search</button>
+
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+
+            {/* search bar starts ends */}
 
 
 
@@ -159,4 +208,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar
