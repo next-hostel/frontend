@@ -46,44 +46,13 @@ display: none;
 
 .userBtn{
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .carousel{
     display: none;
 }
 
-/* searchBar */
-
-.searchDiv{
-    margin-top: 5px;
-    background-color: black;
-    padding: 15px 0;
-
-}
-
-.searchBarHead{
-    display: flex;
-    justify-content: center;
-    color: white;
-
-}
-
-.searchBar{
-    display: flex;
-    justify-content: center;
-    border-radius: 2px;
-
-}
-
-.seFieldset{
-background-color: white;
-padding: 10px;
-}
-
-.seInput{
-    border: none;
-    border-right: 1px gray solid;
-}
 
 
 

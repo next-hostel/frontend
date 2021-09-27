@@ -1,7 +1,7 @@
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
-import { useState } from 'react';
-import Carousel from 'react-elastic-carousel'
+import Carousel from 'react-elastic-carousel';
+import { Button } from 'reactstrap';
 
 
 
@@ -28,8 +28,8 @@ const Navbar = () => {
                 <div className={styles.add} >
                     <h1>add</h1>
                     <div className={styles.signinUpbtn}>
-                        <button className={styles.btnLogin}>login</button>
-                        <button className={styles.btnSignup}>signup</button>
+                        <Button className={styles.btnLogin}>login</Button>{' '}
+                        <Button className={styles.btnSignup}>signup</Button>{' '}
 
                     </div>
                 </div>
@@ -164,43 +164,6 @@ const Navbar = () => {
             </div>
 
             {/* carosel mobile view ends    */}
-
-
-            {/* search bar starts */}
-
-            <div className={styles.searchDiv}>
-                <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
-                <div className={styles.searchBar}>
-
-                    <fieldset className={styles.seFieldset}>
-
-                        <input className={styles.seInput} type="text" placeholder="Search by city , hostel, or neighborhood" />
-
-                    </fieldset>
-
-                    <fieldset className={styles.seFieldset}>
-
-                        <input className={styles.seDate} type="date" min="2018-01-01" max="2019-01-01" />
-
-                    </fieldset>
-
-                    <fieldset className={styles.seFieldset}>
-
-                        <button className={styles.search}>Search</button>
-
-                    </fieldset>
-
-                </div>
-
-            </div>
-
-
-            {/* search bar starts ends */}
-
-
-
-
-
 
 
         </>
