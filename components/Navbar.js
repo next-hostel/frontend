@@ -12,7 +12,7 @@ const Navbar = () => {
         { width: 800, itemsToShow: 3 }
     ]
 
-    const carObject = ["Hostel", "Mess", "PG","Blog","Harsh","Raman","Pragati"];
+    const carObject = ["Hostel", "Mess", "PG", "Blog", "Harsh", "Raman", "Pragati"];
 
 
 
@@ -95,42 +95,44 @@ const Navbar = () => {
                         <span><i className="fas fa-bars"></i></span>
                     </div>
 
-                    <div className={styles.navBrand}>Hostel</div>
+                    <div className={styles.navBrand}> <Link href="/">zephep</Link> </div>
 
                 </div>
 
 
+                <div className={styles.sec}>
 
-                <div className={styles.element}>
+                    <div className={styles.element}>
 
 
-                    <div className={styles.hostelEle}>
-                        <Link href="/">Hostel</Link>
+                        <div className={styles.hostelEle}>
+                            <Link href="/">Hostel</Link>
+
+                        </div>
+
+                        <div className={styles.hostelEle}>
+                            <Link href="/">PG</Link>
+                        </div>
+
+                        <div className={styles.hostelEle}>
+                            <Link href="/">Mess</Link>
+                        </div>
+
+
 
                     </div>
 
-                    <div className={styles.hostelEle}>
-                        <Link href="/">PG</Link>
-                    </div>
 
-                    <div className={styles.hostelEle}>
-                        <Link href="/">Mess</Link>
-                    </div>
+                    <div className={styles.wrraper}>
 
 
+                        <div className={styles.searchBtn}>
+                            <span><i className="fas fa-search"></i></span>
+                        </div>
 
-                </div>
-
-
-                <div className={styles.wrraper}>
-
-
-                    <div className={styles.searchBtn}>
-                        <span><i className="fas fa-search"></i></span>
-                    </div>
-
-                    <div className={styles.userBtn}>
-                        <span><i className="fas fa-user"></i></span>
+                        <div className={styles.userBtn}>
+                            <span><i className="fas fa-user"></i></span>
+                        </div>
                     </div>
                 </div>
 
@@ -140,19 +142,19 @@ const Navbar = () => {
 
             {/* carosel mobile view */}
 
-            <div className={styles.carousel}>
+            <div className={`${styles.carousel} mob-car `}>
 
                 <Carousel breakPoints={breakPoints} >
 
-              
+
 
                     {
                         carObject.map((ele) => [
                             <div className="">
-                            <div className={styles.carEle}></div>
-                            <span>{ele}</span>
-    
-                        </div>
+                                <div className={styles.carEle}></div>
+                                <span>{ele}</span>
+
+                            </div>
                         ]
                         )
                     }

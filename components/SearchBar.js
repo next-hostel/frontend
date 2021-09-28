@@ -9,27 +9,37 @@ const SearchBar = () => {
         <>
             {/* search bar starts */}
 
-            <div className={styles.searchDiv}>
-                <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
-                <div className={styles.searchBar}>
+            <div className={`${styles.searchDiv} `}>
+                <div className={``}>
 
-                    <fieldset className={styles.seFieldset}>
+                    <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
 
-                        <input className={styles.seInput} type="text" placeholder="Search by city , hostel, or neighborhood" />
+                </div>
+                <div className={`${styles.searchBar}  `}>
 
-                    </fieldset>
+                    <div>
+                        <fieldset className={styles.seFieldset}>
 
-                    <fieldset className={styles.seFieldset}>
+                            <input className={styles.seInput} type="text" placeholder="Search by city , hostel, or neighborhood" />
 
-                        <input className={styles.seDate} type="date" min="2018-01-01" max="2019-01-01" />
+                        </fieldset>
+                    </div>
 
-                    </fieldset>
+                    <div>
+                        <fieldset className={styles.seFieldset}>
 
-                    <fieldset className={styles.seFieldset}>
+                            <input className={styles.seDate} type="date" min="2018-01-01" max="2019-01-01"  />
 
-                        <Button className={styles.search}>Search</Button>
+                        </fieldset>
+                    </div>
 
-                    </fieldset>
+                    <div>
+                        <fieldset className={styles.seFieldset}>
+
+                            <button className={`${styles.search} btn btn-primary `}> Search </button>
+
+                        </fieldset>
+                    </div>
 
                 </div>
 

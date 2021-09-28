@@ -7,8 +7,13 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+a:hover{
+  color: inherit !important;
+  text-decoration: inherit !important;
 }
 
 * {
@@ -18,24 +23,24 @@ a {
   
 }
 
-.rec-arrow-left{
+.mob-car .rec-arrow-left{
   display: none;
 }
 
-.rec-arrow-right{
+.mob-car .rec-arrow-right{
   display: none;
 }
 
-.rec-dot{
+.mob-car .rec-dot{
   display: none;
 }
 
-.eQpvzW{
+.mob-car .eQpvzW{
   justify-content: flex-start;
   width: fit-content !important;
 }
 
-.rec-carousel-item{
+.mob-car .rec-carousel-item{
   padding-left:  16px;
   padding-right: 16px;
 }

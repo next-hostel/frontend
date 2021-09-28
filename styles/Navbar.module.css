@@ -20,17 +20,22 @@ display: none;
     font-size: 30px;
     font-weight: bold;
     padding-right: 40px;
+    text-decoration: underline;
+
 }
 
 .searchBtn{
     cursor: pointer;
 }
 
-
+.sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .element{
     display: flex;
-    padding-right: 80%;
 
 }
 
@@ -162,6 +167,10 @@ display: none;
 
     .navBrand{
         font-size: medium;
+    }
+
+    .sec{
+        justify-content: flex-end;
     }
 
     .element{
