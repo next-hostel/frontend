@@ -1,0 +1,29 @@
+.car_item{
+    width: 100px !important;
+    height: 100% !important;
+    background-color: black !important;
+}
+
+.top_hos_div{
+    margin-top: 5%;
+    padding: 7% 15%;
+}
+
+.cir_car_sec{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 15px;
+}
+
+.cir_car_div{
+    width: 80%;
+}
+
+.cir_car{
+    border-radius: 50%;
+    width: 125px;
+    height: 127px;
+    background-color: white;
+}
+
