@@ -122,6 +122,15 @@ export default function Home() {
 
 
 
+<<<<<<< Updated upstream
+=======
+      
+    </div>
+    <div className="slider"><br>
+      <div className="sliederone">   Hello1  </div>
+      <div className="sliedertwo">    Hello2 </div>
+    </div>
+>>>>>>> Stashed changes
 
 
     </>
