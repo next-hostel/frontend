@@ -2,6 +2,7 @@ import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import Carousel from 'react-elastic-carousel';
 import { Button } from 'reactstrap';
+import { useState } from 'react';
 
 
 
@@ -14,6 +15,19 @@ const Navbar = () => {
 
     const carObject = ["Hostel", "Mess", "PG", "Blog", "Harsh", "Raman", "Pragati"];
 
+    const [sideBar, setSideBar] = useState("sideInActive");
+
+
+    function showSidebar() {
+        if(sideBar==="sideInActive"){
+            setSideBar("sideActive")
+        }
+        else{
+            setSideBar("sideInActive")
+        }
+        
+
+    }
 
 
     return (
@@ -23,63 +37,66 @@ const Navbar = () => {
 
             {/* sidebar start mobile view */}
 
+            <div className={sideBar}>
 
-            <div className={styles.nav}>
-                <div className={styles.add} >
-                    <h1>add</h1>
-                    <div className={styles.signinUpbtn}>
-                        <Button className={styles.btnLogin}>login</Button>{' '}
-                        <Button className={styles.btnSignup}>signup</Button>{' '}
+                <div className={`${styles.nav}   `}>
+
+                    <div className={styles.add} >
+                        <h1>add</h1>
+                        <div className={styles.signinUpbtn}>
+                            <Button className={styles.btnLogin}>login</Button>{' '}
+                            <Button className={styles.btnSignup}>signup</Button>{' '}
+
+                        </div>
+                    </div>
+
+
+                    <div className={styles.navigator}>
+
+
+                        <ul>
+
+
+                            <li className={styles.listItems}>
+
+                                <Link href="/">
+
+                                    <a className={styles.linkStyle}>
+                                        <span className={styles.title} >Hostels</span>
+                                    </a>
+                                </Link>
+
+                            </li>
+
+                            <li className={styles.listItems}>
+
+                                <Link href="/">
+
+                                    <a className={styles.linkStyle}>
+                                        <span className={styles.title} >PG</span>
+                                    </a>
+
+                                </Link>
+
+                            </li>
+
+                            <li className={styles.listItems}>
+                                <Link href="/">
+
+                                    <a className={styles.linkStyle}>
+                                        <span className={styles.title} >Mess</span>
+                                    </a>
+
+                                </Link>
+
+                            </li>
+
+
+                        </ul>
 
                     </div>
-                </div>
-
-
-                <div className={styles.navigator}>
-
-
-                    <ul>
-
-
-                        <li className={styles.listItems}>
-
-                            <Link href="/">
-
-                                <a className={styles.linkStyle}>
-                                    <span className={styles.title} >Hostels</span>
-                                </a>
-                            </Link>
-
-                        </li>
-
-                        <li className={styles.listItems}>
-
-                            <Link href="/">
-
-                                <a className={styles.linkStyle}>
-                                    <span className={styles.title} >PG</span>
-                                </a>
-
-                            </Link>
-
-                        </li>
-
-                        <li className={styles.listItems}>
-                            <Link href="/">
-
-                                <a className={styles.linkStyle}>
-                                    <span className={styles.title} >Mess</span>
-                                </a>
-
-                            </Link>
-
-                        </li>
-
-
-                    </ul>
 
                 </div>
-
             </div>
 
 
@@ -90,7 +107,7 @@ const Navbar = () => {
 
             <div className={styles.navabar}>
 
-                <div className={styles.wrraper}>
+                <div onClick={showSidebar} className={styles.wrraper}>
                     <div className={styles.toggleBar}>
                         <span><i className="fas fa-bars"></i></span>
                     </div>
