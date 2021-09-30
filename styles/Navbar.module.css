@@ -7,9 +7,12 @@
 .navabar{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     padding: 15px 20px;
-    background-color:#4e54c8;
+    background-color:#fff;
+    font-weight: 700;
+    font-size: 20px;
+    color: #666;
 
 }
 
@@ -20,28 +23,43 @@ display: none;
 .navBrand{
     font-size: 30px;
     font-weight: bold;
-    padding-right: 40px;
+    color: black;
+    margin-right: 50px;
     text-decoration: underline;
-
-}
-
-.searchBtn{
     cursor: pointer;
 }
+
 
 .sec{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: 5px;
 }
-
 .element{
     display: flex;
 
 }
 
+
+
 .hostelEle{
-    padding-right: 20%;
+    margin-right: 30%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.hostelEle:hover{
+    border-bottom: 3px #ea2330 solid ;
+    transition: 0.2s;
+    bottom: 5px;
+    color: #ea2330;
 
 }
 
@@ -50,9 +68,18 @@ display: none;
     font-size: large;
 }
 
+.searchBtn{
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
 .userBtn{
     padding-left: 30px;
     cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 30px;
+
+
 }
 
 .carousel{
@@ -125,6 +152,8 @@ display: none;
 
     }
 
+    
+
 
     .navigator ul li.active{
         background-color: #fff;
@@ -192,8 +221,18 @@ display: none;
         font-weight: 500;
     }
 
+    .searchBtn{
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
     .userBtn{
+        padding-left: 30px;
+        cursor: pointer;
+        font-size: 1rem;
         padding-left: 15px;
+
+    
     }
 
     .carousel{

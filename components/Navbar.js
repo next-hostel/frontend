@@ -19,13 +19,13 @@ const Navbar = () => {
 
 
     function showSidebar() {
-        if(sideBar==="sideInActive"){
+        if (sideBar === "sideInActive") {
             setSideBar("sideActive")
         }
-        else{
+        else {
             setSideBar("sideInActive")
         }
-        
+
 
     }
 
@@ -109,7 +109,7 @@ const Navbar = () => {
 
                 <div onClick={showSidebar} className={styles.wrraper}>
                     <div className={styles.toggleBar}>
-                        <span><i className="fas fa-bars"></i></span>
+                        <span><i className="fas fa-bars " ></i></span>
                     </div>
 
                     <div className={styles.navBrand}> <Link href="/">zephep</Link> </div>
@@ -123,15 +123,20 @@ const Navbar = () => {
 
 
                         <div className={styles.hostelEle}>
+                            <span><i className="far fa-building"></i></span>
                             <Link href="/">Hostel</Link>
 
                         </div>
 
                         <div className={styles.hostelEle}>
+                            <span><i className="fa fa-home"></i></span>
+
                             <Link href="/">PG</Link>
                         </div>
 
                         <div className={styles.hostelEle}>
+                            <span><i class="fas fa-utensils"></i></span>
+
                             <Link href="/">Mess</Link>
                         </div>
 
@@ -144,7 +149,7 @@ const Navbar = () => {
 
 
                         <div className={styles.searchBtn}>
-                            <span><i className="fas fa-search"></i></span>
+                            <span><i className="fas fa-search "></i></span>
                         </div>
 
                         <div className={styles.userBtn}>

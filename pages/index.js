@@ -29,7 +29,7 @@ export default function Home() {
 
 
         <Navbar />
-        {/* <SearchBar /> */}
+        <SearchBar />
 
 
       </section>
