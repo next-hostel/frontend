@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/SearchBar.module.css'
+import styles from '../styles/Searchbar.module.css'
 import { Button } from 'reactstrap';
 
 

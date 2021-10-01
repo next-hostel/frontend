@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        color: blanchedalmond;
+        min-height: 100vh;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: #020d18;
+        box-sizing: initial;
+        transition: 0.5s;
+        z-index: 5;
+    }
+    
+    
+
+    .add{
+        height: 25vh;
+        background-color: ivory;
+    }
+
+    .signinUpbtn{
+        display: flex;
+        justify-content: flex-end;
+        height: 60%;
+        align-items: flex-end;
+        margin-right: 10px;
+
+    }
+
+    .navigator ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 5px ;
+        padding-top: 40px;
+    }
+
+    .navigator ul li{
+        position: relative;
+        list-style: none;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+
+
+    .navigator ul li.active{
+        background-color: #fff;
+
+    }
+
+    .navigator ul li .linkStyle{
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: ivory;
+        line-height: 40px;
+        min-width: 60px;
+        height: 40px;
+
+    }
+
+    .navigator ul li.active .linkStyle{
+        color: #333;
+    }
+
+    .navigator ul li .linkStyle .title{
+        position: relative;
+        display: block;
+        padding-left: 10px ;
+        height: 40px;
+        line-height: 40px;
+        white-space: normal;
+    }
+
+    
+}

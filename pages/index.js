@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
-import SearchBar from '../components/SearchBar'
+import SearchBar from '../components/Searchbar'
 import 'reactstrap';
 import Carousel from 'react-elastic-carousel';
 
@@ -29,7 +29,6 @@ export default function Home() {
 
 
         <Navbar />
-        <SearchBar />
 
 
       </section>
