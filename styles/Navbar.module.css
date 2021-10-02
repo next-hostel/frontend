@@ -20,6 +20,10 @@
 display: none;
 }
 
+.side{
+    display: none;
+}
+
 .navBrand{
     font-size: 30px;
     font-weight: bold;
@@ -108,7 +112,9 @@ display: none;
 
     /* sidebar  */
 
-     
+    .side{
+        display: block;
+    }
     
     .closeBtn{
         

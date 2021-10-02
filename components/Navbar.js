@@ -44,11 +44,12 @@ const Navbar = () => {
 
         <>
 
-            <div className={sideBar}>
-                <Sidebar />
+            <div className={styles.side}>
+                <div className={sideBar}>
+                    <Sidebar />
+                </div>
+
             </div>
-
-
 
             {/* navbar  */}
 
