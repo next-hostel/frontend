@@ -98,11 +98,12 @@ const Navbar = () => {
 
 
                         <div className={styles.searchBtn}>
-                            <span><i className="fas fa-search "></i></span>
+                            <button className={`btn btn-danger btn-sm`}>Login</button>
                         </div>
 
                         <div className={styles.userBtn}>
                             <span><i className="fas fa-user"></i></span>
+                            <span>Sign Up</span>
                         </div>
                     </div>
                 </div>

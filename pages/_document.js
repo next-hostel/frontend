@@ -28,7 +28,6 @@ class MyDocument extends Document {
            </script>
 
 
-          <script type="text/javascript" src="./Js/navbarSelector.js"></script>
         </body>
       </Html>
     )

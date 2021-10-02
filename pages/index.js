@@ -30,7 +30,7 @@ export default function Home() {
 
 
         <Navbar />
-        <SearchBar/>
+        <SearchBar />
 
 
       </section>
@@ -44,11 +44,22 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image src="/images/img.jpg"  width={606} height={220} />
+              <Image className={styles.car_img} src="/images/img.jpg" width={606} height={220} />
 
             </div>
 
-            <span>hello</span>
+            <div className={styles.detail}>
+              <div>
+                <h6>Hostel Name</h6>
+                <p>Hostel Address</p>
+
+              </div>
+
+              <div>
+                <h5>Price</h5>
+                <button className={`${styles.view_detail} btn btn-danger btn-sm`}>View Detail</button>
+              </div>
+            </div>
           </div>
 
 
@@ -56,13 +67,22 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image src="/images/img1.jpg"  width={606} height={220} />
+              <Image className={styles.car_img}src="/images/img1.jpg" width={606} height={220} />
 
             </div>
 
-            <div className="detail">
-              <h6>Hostel Name</h6>
-              
+            <div className={styles.detail}>
+              <div>
+                <h6>Hostel Name</h6>
+                <p>Hostel Address</p>
+
+              </div>
+
+              <div>
+                <h5>Price</h5>
+                <button className={`${styles.view_detail} btn btn-danger btn-sm`}>View Detail</button>
+              </div>
+
             </div>
           </div>
 
@@ -70,22 +90,44 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image src="/images/img2.jpg"  width={606} height={220} />
+              <Image className={styles.car_img}src="/images/img2.jpg" width={606} height={220} />
 
             </div>
+            <div className={styles.detail}>
+              <div>
+                <h6>Hostel Name</h6>
+                <p>Hostel Address</p>
 
-            <span>hello</span>
+              </div>
+
+              <div>
+                <h5>Price</h5>
+                <button className={`${styles.view_detail} btn btn-danger btn-sm`}>View Detail</button>
+              </div>
+            </div>
           </div>
 
           <div className={styles.car_item}>
 
             <div className={styles.img_div}>
 
-              <Image src="/images/img3.jpg"  width={606} height={220} />
+              <Image className={styles.car_img}src="/images/img3.jpg" width={606} height={220} />
 
             </div>
 
-            <span>hello</span>
+
+            <div className={styles.detail}>
+              <div>
+                <h6>Hostel Name</h6>
+                <p>Hostel Address</p>
+
+              </div>
+
+              <div>
+                <h5>Price</h5>
+                <button className={`${styles.view_detail} btn btn-danger btn-sm`}>View Detail</button>
+              </div>
+            </div>
           </div>
 
 

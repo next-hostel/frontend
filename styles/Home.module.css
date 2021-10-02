@@ -5,11 +5,27 @@
 
 .car_item{
     width: 606px;
-    height: 400px;
+    height: 330px;
     padding: 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px grey ;
+}
+
+.car_img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+
+}
+
+.detail{
+    width: 606px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .img_div{

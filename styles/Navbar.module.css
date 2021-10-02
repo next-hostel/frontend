@@ -86,10 +86,11 @@ display: none;
 .userBtn{
     padding-left: 30px;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 30px;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel{
