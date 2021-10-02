@@ -9,28 +9,17 @@ const Sidebar = () => {
     const [sideBar, setSideBar] = useState("sideInActive");
 
 
-    function showSidebar() {
-        if (sideBar === "sideInActive") {
-            setSideBar("sideActive")
-        }
-        else {
-            setSideBar("sideInActive")
-        }
-
-
-    }
-
     return (
         <>
-        
+
             <div className={`${styles.nav}   `}>
 
-                <div  className={styles.add} >
-                    
-                    <h1>add</h1>
+                <div className={styles.add} >
+
+
                     <div className={styles.signinUpbtn}>
-                        <Button className={styles.btnLogin}>login</Button>{' '}
-                        <Button className={styles.btnSignup}>signup</Button>{' '}
+                        <button className={`${styles.btnLogin} ${styles.sideBtn} btn btn-outline-danger btn-sm`}>login</button>
+                        <button className={`${styles.btnSignup} ${styles.sideBtn} btn btn-danger btn-sm`}>signup</button>
 
                     </div>
                 </div>
