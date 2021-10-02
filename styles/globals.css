@@ -48,10 +48,24 @@ a:hover{
 @media screen and (max-width: 768px) {
 
   .sideActive{
-    display: flex  !important;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    box-sizing: initial;
+    transition: 850ms;
+    z-index: 2;
   }
 
   .sideInActive{
-    display: none !important
+    position: fixed;
+    left: -100%;
+    transition: 850ms;
+    z-index: 2;
   }
 }

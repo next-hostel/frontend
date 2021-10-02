@@ -1,23 +1,5 @@
 @media screen and (max-width: 768px) {
-    .nav{
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 70%;
-        box-sizing: initial;
-        transition: 0.5s;
-        z-index: 2;
-        box-shadow: 250px 0 #5f50507d;
-        transition: width 5s;
-
-    }
     
-    
-
     .add{
         height: 35vw;
         background-image: url(../public/images/SideAddImg.webp);
