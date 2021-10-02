@@ -57,7 +57,6 @@ const Navbar = () => {
 
                 <div onClick={showSidebar} className={styles.wrraper}>
                     <div className={styles.toggleBar}>
-                        {/* <span><i className="fas fa-bars " ></i></span> */}
                         <span onClick={showSidebar} className={styles.closeBtn}><i className={toggler} ></i></span>
 
                     </div>

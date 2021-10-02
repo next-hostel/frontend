@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
-import SearchBar from '../components/Searchbar'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Navbar from '../components/Navbar';
+import SearchBar from '../components/Searchbar';
 import 'reactstrap';
 import Carousel from 'react-elastic-carousel';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
 
 
         <Navbar />
-        {/* <SearchBar/> */}
+        <SearchBar/>
 
 
       </section>
@@ -38,39 +39,54 @@ export default function Home() {
 
         <Carousel breakPoints={breakPoints}>
 
-          <div>
-            <div className={styles.car_item}>
-              <h1>hi</h1>
-              <span>hello</span>
-            </div>
-          </div>
 
-          <div>
-            <div className={styles.car_item}>
-              <h1>2</h1>
-              <span>hello</span>
+          <div className={styles.car_item}>
+
+            <div className={styles.img_div}>
+
+              <Image src="/images/img.jpg"  width={606} height={220} />
 
             </div>
-          </div>
 
-          <div>
-            <div className={styles.car_item}>
-              <h1>3</h1>
-              <span>hello</span>
-
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.car_item}>
-              <h1>4</h1>
-              <span>hello</span>
-
-            </div>
+            <span>hello</span>
           </div>
 
 
+          <div className={styles.car_item}>
 
+            <div className={styles.img_div}>
+
+              <Image src="/images/img1.jpg"  width={606} height={220} />
+
+            </div>
+
+            <div className="detail">
+              <h6>Hostel Name</h6>
+              
+            </div>
+          </div>
+
+          <div className={styles.car_item}>
+
+            <div className={styles.img_div}>
+
+              <Image src="/images/img2.jpg"  width={606} height={220} />
+
+            </div>
+
+            <span>hello</span>
+          </div>
+
+          <div className={styles.car_item}>
+
+            <div className={styles.img_div}>
+
+              <Image src="/images/img3.jpg"  width={606} height={220} />
+
+            </div>
+
+            <span>hello</span>
+          </div>
 
 
         </Carousel>
@@ -120,6 +136,6 @@ export default function Home() {
 
       </section>
 
-      </>
+    </>
   )
 }
