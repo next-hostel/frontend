@@ -3,7 +3,9 @@ import Link from 'next/link';
 import Carousel from 'react-elastic-carousel';
 import { Button } from 'reactstrap';
 import { useState } from 'react';
+import Router from 'next/router';
 import Sidebar from './Sidebar';
+import { signout, isAuth } from '../action/auth';
 
 
 
@@ -97,15 +99,49 @@ const Navbar = () => {
 
                     <div className={styles.wrraper}>
 
+                        {!isAuth() && (
 
-                        <div className={styles.searchBtn}>
+                            <>
+
+                                <div className={styles.searchBtn}>
+                                    <Link href="/signin" className="btn btn-danger btn-sm">Login</Link>
+                                </div>
+
+                                <div className={styles.userBtn}>
+                                    <span><i className="fas fa-user"></i></span>
+                                    <Link href="/singnup">Sign Up</Link>
+                                </div>
+                            </>
+
+                        )}
+
+                        {isAuth() && isAuth().role === 'user' &&(
+
+                            <>
+
+                                <div className={styles.searchBtn}>
+                                    <button className={`btn btn-danger btn-sm`}>{`${isAuth().name}'s Dashboard`}</button>
+                                </div>
+
+                               
+                            </>
+
+                        )}
+
+                        {isAuth() && (
+                            <div className={styles.userBtn}>
+                                    <span><i className="fas fa-user"></i></span>
+                                    <span onClick={() => signout(() => Router.replace(`/signin`))}>Signout</span>
+                            </div>
+                        )}
+                        {/* <div className={styles.searchBtn}>
                             <button className={`btn btn-danger btn-sm`}>Login</button>
                         </div>
 
                         <div className={styles.userBtn}>
                             <span><i className="fas fa-user"></i></span>
                             <span>Sign Up</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
