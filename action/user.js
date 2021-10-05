@@ -2,11 +2,12 @@ import fetch from 'isomorphic-fetch';
 import { API } from '../config';
 import { handleResponse } from './auth';
 
-export const userPublicProfile = username => {
-    return fetch(`${API}/user/${username}`, {
+export const userProfile = (id, token )=> {
+    return fetch(`${API}/user/${id}`, {
         method: 'GET',
         headers: {
-            Accept: 'application/json'
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`
         }
     })
         .then(response => {

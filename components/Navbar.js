@@ -105,29 +105,34 @@ const Navbar = () => {
 
                                 <div className={styles.userBtn}>
                                     <span><i className="fas fa-user"></i></span>
-                                    <Link href="/singnup">Sign Up</Link>
+                                    <Link href="/signup">Sign Up</Link>
                                 </div>
                             </>
 
                         )}
 
-                        {isAuth() && isAuth().role === 'user' &&(
+                        {isAuth() && isAuth().role === 'user' && (
 
                             <>
 
                                 <div className={styles.searchBtn}>
-                                    <button className={`btn btn-danger btn-sm`}>{`${isAuth().name}'s Dashboard`}</button>
+                                    <button className={`btn btn-danger btn-sm`}>
+                                        <Link href="/user">
+                                            <a>{`${isAuth().name}'s Dashboard`}</a>
+                                        </Link>
+
+                                    </button>
                                 </div>
 
-                               
+
                             </>
 
                         )}
 
                         {isAuth() && (
                             <div className={styles.userBtn}>
-                                    <span><i className="fas fa-user"></i></span>
-                                    <span onClick={() => signout(() => Router.replace(`/signin`))}>Signout</span>
+                                <span><i className="fas fa-user"></i></span>
+                                <span onClick={() => signout(() => Router.replace(`/signin`))}>Signout</span>
                             </div>
                         )}
                         {/* <div className={styles.searchBtn}>

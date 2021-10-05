@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Router from 'next/router';
 import { getCookie, isAuth, updateUser } from '../../action/auth';
-import { getProfile, update } from '../../action/user';
+import { userProfile, update } from '../../action/user';
 import { API } from '../../config';
+import styles from './ProfileUpdate.module.css'
 
 
 
@@ -32,7 +33,9 @@ const ProfileUpdate = () => {
     } = values;
 
     const init = () => {
-        getProfile(token).then(data => {
+        const id = isAuth()._id;
+        userProfile(id, token).then(data => {
+            console.log("Profile", data)
             if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
@@ -84,37 +87,51 @@ const ProfileUpdate = () => {
 
 
     const profileUpdateForm = () => (
-        <form onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label className="btn btn-outline-info">
-                    Profile photo
-                    <input onChange={handleChange('photo')} type="file" accept="image/*" hidden />
-                </label>
+        <form >
+            <div className="container mx-auto">
+                <div className="row mb-1">
+                    <div className="col-sm-6">
+                        <label>User Id</label>
+                    </div>
+                    <div className="col-sm-6">
+                        <p className={styles.pColor}>Harsh123h</p>
+                    </div>
+                </div>
+                <div className="row mb-1">
+                    <div className="col-sm-6">
+                        <label>Name</label>
+                    </div>
+                    <div className="col-sm-6">
+                        <p className={styles.pColor}>{values.name}</p>
+                    </div>
+                </div>
+                <div className="row mb-1">
+                    <div className="col-sm-6">
+                        <label>Email</label>
+                    </div>
+                    <div className="col-sm-6">
+                        <p className={styles.pColor}>{values.email}</p>
+                    </div>
+                </div>
+                <div className="row mb-2">
+                    <div className="col-sm-6">
+                        <label>Phone</label>
+                    </div>
+                    <div className="col-sm-6">
+                        <p className={styles.pColor}> 6387522891</p>
+                    </div>
+                </div>
+                <div className="row mb-2">
+                    <div className="col-sm-6">
+                        <label>Profession</label>
+                    </div>
+                    <div className="col-sm-6">
+                        <p className={styles.pColor}>Web Developer</p>
+                    </div>
+                </div>
             </div>
-            
-            <div className="form-group">
-                <label className="text-muted">Name</label>
-                <input onChange={handleChange('name')} type="text" value={name} className="form-control" />
-            </div>
-            {/*<div className="form-group">
-                <label className="text-muted">Email</label>
-                <input onChange={handleChange('email')} type="text" value={email} className="form-control" />
-            </div>*/}
-            
-            <div className="form-group">
-                <label className="text-muted">Password</label>
-                <input onChange={handleChange('password')} type="password" value={password} className="form-control" />
-            </div>
-            <div>
-                {showSuccess()}
-                {showError()}
-                {showLoading()}
-            </div>
-            <div>
-                <button type="submit" className="btn btn-primary" disabled={ !name || !email}>
-                    Update
-                </button>
-            </div>
+
+
         </form>
     );
 
@@ -126,7 +143,7 @@ const ProfileUpdate = () => {
     );
 
     const showSuccess = () => (
-        
+
         <div className="alert alert-success" style={{ display: success ? '' : 'none' }}>
             Profile updated
         </div>
@@ -143,7 +160,7 @@ const ProfileUpdate = () => {
         <>
             <div className="container">
                 <div className="row">
-                    
+
                     <div className="col-md-8 mb-5">{profileUpdateForm()}</div>
                 </div>
             </div>
