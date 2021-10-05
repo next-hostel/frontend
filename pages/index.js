@@ -31,8 +31,6 @@ export default function Home() {
 
 
       <section className={styles.hero_sec}>
-        <Navbar />
-        {/* <SearchBar /> */}
 
         <div className={styles.hero_image}>
 
