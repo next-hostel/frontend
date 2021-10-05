@@ -9,11 +9,12 @@ class MyDocument extends Document {
         <Head>
 
 
-        <script src="https://kit.fontawesome.com/8be3ae5bea.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8be3ae5bea.js" crossOrigin="anonymous"></script>
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js" />
-
+            {/* Font Awesome */}
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
        
         </Head>
 
@@ -28,6 +29,7 @@ class MyDocument extends Document {
            </script> */}
 
 
+          
         </body>
       </Html>
     )
