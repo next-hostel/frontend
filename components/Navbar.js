@@ -1,6 +1,5 @@
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
-import Carousel from 'react-elastic-carousel';
 import { Button } from 'reactstrap';
 import { useState } from 'react';
 import Sidebar from './Sidebar';
@@ -10,11 +9,8 @@ import Sidebar from './Sidebar';
 
 const Navbar = () => {
 
-    const breakPoints = [
-        { width: 800, itemsToShow: 3 }
-    ]
+    
 
-    const carObject = ["Hostel", "Mess", "PG", "Blog", "Harsh", "Raman", "Pragati"];
 
     const [sideBar, setSideBar] = useState("sideInActive");
 
@@ -102,7 +98,7 @@ const Navbar = () => {
                         </div>
 
                         <div className={styles.userBtn}>
-                            <span><i className="fas fa-user"></i></span>
+                            <span><i className={`${styles.signuplogo} fas fa-user`}></i></span>
                             <span>Sign Up</span>
                         </div>
                     </div>
@@ -114,30 +110,8 @@ const Navbar = () => {
 
             {/* carosel mobile view */}
 
-            <div className={`${styles.carousel} mob-car `}>
-
-                <Carousel breakPoints={breakPoints} >
-
-
-
-                    {
-                        carObject.map((ele) => [
-                            <div className="">
-                                <div className={styles.carEle}></div>
-                                <span>{ele}</span>
-
-                            </div>
-                        ]
-                        )
-                    }
-
-
-                </Carousel>
-
-
-            </div>
-
             {/* carosel mobile view ends    */}
+
 
 
         </>

@@ -1,5 +1,8 @@
 @media screen and (max-width: 768px) {
-    
+    .wrraper{
+        border-right: solid 1px #666;
+        height: 100vh;
+    }
     .add{
         height: 35vw;
         background-image: url(../public/images/SideAddImg.webp);
@@ -17,9 +20,9 @@
 
     }
 
-    .btnLogin{
-        /* width: px; */
-    }
+    /* .btnLogin{
+         width: px; 
+    } */
 
     .btnSignup{
         margin-left: 15px;

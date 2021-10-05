@@ -1,6 +1,10 @@
+.smallCarousel{
+    display: none;
+}
+
 .top_hos_div{
     margin-top: 5%;
-    /* padding: 7% 7%; */
+    padding: 5% 5% 7%;
 }
 
 .car_item{
@@ -12,13 +16,14 @@
     align-items: center;
     border: 1px solid #d7d7d7;
     border-radius: 8px;
-    box-shadow: 1px 1px 1px grey ;
+    /* box-shadow: 1px 1px 1px grey ; */
 }
 
 .car_img{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
+    width: 60vw !important;
+    height: 100% !important;
 
 }
 
@@ -37,20 +42,166 @@
 
 .cir_car_sec{
     display: flex;
-    justify-content: center;
-    background-color: black;
+    align-items: center;
     padding-top: 15px;
+    flex-direction: column;
 }
 
 
 
 .cir_car_div{
+    margin-top: 5%;
     width: 80%;
+    height: 200px;
 }
 
 .cir_car{
     border-radius: 50%;
     width: 125px;
-    height: 127px;
-    background-color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+
+.cir_car_img{
+    border-radius: 50%;
+}
+
+.locName {
+    margin-top: 5px;
+}
+
+.locName h6{
+
+color:#2a2a2e ;
+}
+
+.locName p{
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .smallCarousel{
+        display:flex;
+    }
+    
+}
+
+/* hero section */
+
+.hero_image {
+    background-image: linear-gradient(to bottom, rgba(20, 200, 200, 0.52), rgba(100, 10, 90, 0.70));
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .nav_div{
+    margin: 0 0 40px;
+  }
+
+  
+  
+  .hone{
+   font-family: 'Aclonica';
+   font-size: 80px;
+  }
+  
+  
+  
+  .hero_text {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font:arial;
+    font-weight: bold;
+  }
+  
+  
+ 
+  /* Style the search field */
+  .search_form .example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 85%;
+    background: white;
+  }
+  
+  /* Style the submit button */
+  .fa{
+      color: black;
+  }
+  .search_form .example button {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: white;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  .search_form .example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  .search_form .example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  /* Main search end */
+  
+  
+  
+  
+  
+  /* datetable css */
+  .datetable tr {
+    align-items:center;
+    float: right;
+    padding: 6px;
+    border:none;
+    border-radius: 3%;
+    margin-top: 5%;
+    margin-right: -50%;
+    font-size: 20px;
+    background-color: #292929;
+  }
+  
+  .go{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .go:hover {
+    background: #0b7dda;
+  }
+  
+  
+  /* for responsive */
+  @media (max-width:560px)
+    {
+      .hone{font-family: 'Aclonica'; font-size: 20px;}
+  
+      p.sub_text{ font-size: 0;}
+    }
+  
