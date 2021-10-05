@@ -6,9 +6,9 @@
 
 .navabar{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-end;
-    padding: 2% 15% 0;
+    padding: 2% 7% 0;
     background-color: transparent;
     font-weight: 700;
     font-size: 20px;
@@ -34,12 +34,7 @@ display: none;
 }
 
 
-.sec{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: 5px;
-}
+
 .element{
     display: flex;
 
@@ -58,24 +53,27 @@ display: none;
     flex-direction: column;
     justify-content: flex-end;
     cursor: pointer;
+    padding: 0 2px 0;
 
 }
 .hostelEle:hover{
-    border-bottom: 3px #ea2330 solid ;
+    border-bottom: 3px #0b7dda solid ;
     transition: 0.2s;
-    color: #ea2330;
+    color: #0b7dda;
 
 }
 
 .hostelEleActive{
-    color: #ea2330;
-    border-bottom: 3px #ea2330 solid ;
+    color: #0b7dda;
+    border-bottom: 3px #0b7dda solid ;
  
 }
 
 .wrraper{
     display: flex;
     font-size: large;
+    height: 40px;
+    align-items: flex-end;
 }
 
 .searchBtn{
@@ -84,20 +82,26 @@ display: none;
 }
 
 .userBtn{
-    padding-left: 30px;
+    margin-left: 30px;
     cursor: pointer;
     font-size: 12px;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2px 0;
+}
+
+.userBtn:hover{
+    border-bottom: 3px #0b7dda solid ;
+    transition: 0.2s;
+    color: #0b7dda;
 }
 
 .signuplogo{
     font-size: 1rem;
     border-radius: 50%;
     border: 1px solid #666;
-    padding: 5px;
 }
 
 .carousel{
@@ -179,10 +183,9 @@ display: none;
     }
     
     .userBtn{
-        padding-left: 30px;
         cursor: pointer;
         font-size: 12px;
-        padding-left: 15px;
+        margin-left: 15px;
 
     
     }

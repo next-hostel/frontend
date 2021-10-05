@@ -12,7 +12,7 @@ import { signout, isAuth } from '../action/auth';
 
 const Navbar = () => {
 
-    
+
 
 
     const [sideBar, setSideBar] = useState("sideInActive");
@@ -65,94 +65,81 @@ const Navbar = () => {
                 </div>
 
 
-                <div className={styles.sec}>
 
-                    <div className={styles.element}>
-
-
-                        <div className={styles.hostelEle}>
-                            <span><i className="far fa-building"></i></span>
-                            <Link href="/">Hostel</Link>
-
-                        </div>
-
-                        <div className={styles.hostelEle}>
-                            <span><i className="fa fa-home"></i></span>
-
-                            <Link href="/">PG</Link>
-                        </div>
-
-                        <div className={styles.hostelEle}>
-                            <span><i className="fas fa-utensils"></i></span>
-
-                            <Link href="/">Mess</Link>
-                        </div>
+                <div className={styles.element}>
 
 
+                    <div className={styles.hostelEle}>
+                        <span><i className="far fa-building"></i></span>
+                        <Link href="/">Hostel</Link>
 
                     </div>
 
+                    <div className={styles.hostelEle}>
+                        <span><i className="fa fa-home"></i></span>
 
-                    <div className={styles.wrraper}>
+                        <Link href="/">PG</Link>
+                    </div>
 
-                        {!isAuth() && (
+                    <div className={styles.hostelEle}>
+                        <span><i className="fas fa-utensils"></i></span>
 
-                            <>
+                        <Link href="/">Mess</Link>
+                    </div>
 
-                                <div className={styles.searchBtn}>
-                                    <Link href="/signin" className="btn btn-danger btn-sm">Login</Link>
-                                </div>
 
-                                <div className={styles.userBtn}>
-                                    <span><i className="fas fa-user"></i></span>
-                                    <Link href="/signup">Sign Up</Link>
-                                </div>
-                            </>
 
-                        )}
+                </div>
 
-                        {isAuth() && isAuth().role === 'user' && (
 
-                            <>
+                <div className={styles.wrraper}>
 
-                                <div className={styles.searchBtn}>
-                                    <button className={`btn btn-danger btn-sm`}>
-                                        <Link href="/user">
-                                            <a>{`${isAuth().name}'s Dashboard`}</a>
-                                        </Link>
+                    {!isAuth() && (
 
+                        <>
+
+                            <div className={styles.searchBtn}>
+                                <Link href="/signin" >
+                                    <button className="btn btn-outline-primary btn-sm">
+                                        Login
                                     </button>
-                                </div>
-
-
-                            </>
-
-                        )}
-
-                        {isAuth() && (
-                            <div className={styles.userBtn}>
-                                <span><i className="fas fa-user"></i></span>
-                                <span onClick={() => signout(() => Router.replace(`/signin`))}>Signout</span>
+                                </Link>
                             </div>
-                        )}
-                        {/* <div className={styles.searchBtn}>
-                            <button className={`btn btn-danger btn-sm`}>Login</button>
-                        </div>
 
+                            <div className={styles.userBtn}>
+                                <span ><i className="fas fa-user"></i></span>
+                                <Link href="/singnup">Sign Up</Link>
+                            </div>
+                        </>
+
+                    )}
+
+                    {isAuth() && isAuth().role === 'user' && (
+
+                        <>
+
+                            <div className={styles.searchBtn}>
+                                <button className={`btn btn-danger btn-sm`}>{`${isAuth().name}'s Dashboard`}</button>
+                            </div>
+
+
+                        </>
+
+                    )}
+
+                    {isAuth() && (
                         <div className={styles.userBtn}>
-                            <span><i className={`${styles.signuplogo} fas fa-user`}></i></span>
-                            <span>Sign Up</span>
-                        </div> */}
-                    </div>
+                            <span><i className="fas fa-user"></i></span>
+                            <span onClick={() => signout(() => Router.replace(`/signin`))}>Signout</span>
+                        </div>
+                    )}
+
                 </div>
 
 
             </div>
             {/* navbar ends */}
 
-            {/* carosel mobile view */}
-
-            {/* carosel mobile view ends    */}
 
 
 

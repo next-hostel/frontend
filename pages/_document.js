@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js" />
             {/* Font Awesome */}
-            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossOrigin="anonymous"/>
        
         </Head>
 
@@ -23,10 +23,10 @@ class MyDocument extends Document {
           <NextScript />
 
 
-          {/* <script src="https://code.jquery.com/jquery-3.5.1.js"
+          <script src="https://code.jquery.com/jquery-3.5.1.js"
                 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
                  crossOrigin="anonymous">
-           </script> */}
+           </script>
 
 
           
