@@ -5,6 +5,7 @@ import { getCookie, isAuth, updateUser } from '../../action/auth';
 import { userProfile, update } from '../../action/user';
 import { API } from '../../config';
 import Private from '../../components/auth/Private';
+import Layout from '../../components/Layout';
 
 import UserProfile from '../../components/Profile/UserProfile/UserProfile';
 
@@ -55,6 +56,7 @@ const UserIndex = () => {
 
 
     return (
+        <Layout>
         <Private>
             <UserProfile
             username="Kshiti123"
@@ -66,6 +68,7 @@ const UserIndex = () => {
 
              />
         </Private>
+        </Layout>
     )
 }
 

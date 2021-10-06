@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 
 import { withRouter } from 'next/router';
 import { signup } from '../../../../action/auth';
+import Layout from '../../../../components/Layout';
 
 const ActivateAccount = ({ router }) => {
     const [values, setValues] = useState({
@@ -32,14 +33,15 @@ const ActivateAccount = ({ router }) => {
             } else {
                 setValues({ ...values, loading: false, success: true, showButton: false });
             }
-        });  
+        });
     };
 
     const showLoading = () => (loading ? <h2>Loading...</h2> : '');
 
 
     return (
-        <div className="container">
+        <Layout>
+            <div className="container">
                 <h3 className="pb-4">Hey {name}, Ready to activate your account?</h3>
                 {showLoading()}
                 {error && error}
@@ -50,6 +52,8 @@ const ActivateAccount = ({ router }) => {
                     </button>
                 )}
             </div>
+        </Layout>
+
     )
 }
 
