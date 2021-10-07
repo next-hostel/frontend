@@ -108,7 +108,7 @@ const Navbar = () => {
 
                             <div className={styles.userBtn}>
                                 <span ><i className="fas fa-user"></i></span>
-                                <Link href="/singnup">Sign Up</Link>
+                                <Link href="/signup">Sign Up</Link>
                             </div>
                         </>
 
