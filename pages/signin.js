@@ -1,5 +1,6 @@
 import { withRouter } from 'next/router';
 import SigninComponent from '../components/auth/SigninComponent';
+import Layout from '../components/Layout';
 
 
 
@@ -15,10 +16,10 @@ const signin = ({ router }) => {
 
 
     return (
-        <>
+        <Layout>
             <SigninComponent />
             {showRedirectMessage()}
-        </>
+        </Layout>
     )
 }
 

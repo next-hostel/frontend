@@ -79,7 +79,7 @@ const SigninComponent = () => {
                     />
                 </div>
                 <div>
-                    <button className="btn btn-primary">Signup</button>
+                    <button className="btn btn-primary mt-5">Signup</button>
                 </div>
             </form>
 
