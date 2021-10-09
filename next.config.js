@@ -1,5 +1,5 @@
 module.exports = {
-    env: {
+    publicRuntimeConfig: {
         APP_NAME: 'ZepHep',
         API_DEVELOPMENT: 'http://localhost:8000',
         API_PRODUCTION: 'https://ziphipapi.herokuapp.com',
