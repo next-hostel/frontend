@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { signin, authenticate, isAuth } from '../../action/auth';
 import Router from 'next/router';
 import Link from 'next/link';
+import LoginGoogle from './LoginGoogle';
 
 
 const SigninComponent = () => {
@@ -101,6 +102,7 @@ const SigninComponent = () => {
             {showMessage()}
             <h1 className="text-center">Signin Form</h1>
             <div className="col-lg-6 mx-auto mt-5">
+            <LoginGoogle />
                 {showForm && signinForm()}
             </div>
 
