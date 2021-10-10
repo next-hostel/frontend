@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
-
-import 'reactstrap';
 import Carousel from 'react-elastic-carousel';
-import Image from 'next/image';
 import SmallCarousel from '../components/SmallCarousel';
 import Footer from '../components/Footer';
+import Searchbar from '../components/Searchbar';
 
 
 export default function Home() {
@@ -15,60 +13,34 @@ export default function Home() {
 
     { width: 400, itemsToShow: 1 },
 
-    { width: 400, itemsToShow: 2 }
+    { width: 700, itemsToShow: 2 }
 
   ]
 
   const circle_breakpoints = [
-    { width: 400, itemsToShow: 3 },
-    { width: 600, itemsToShow: 4 },
+    { width: 300, itemsToShow: 1 },
+    { width: 500, itemsToShow: 4 },
     { width: 900, itemsToShow: 6 },
 
   ]
 
   return (
     <>
+      <div className={styles.nav_div}>
 
+        <Navbar />
 
-      <section className={styles.hero_sec}>
+        <SmallCarousel />
 
-        <div className={styles.hero_image}>
+      </div>
 
+      <div className="search">
+        {/* <Searchbar /> */}
 
-          <div className={styles.nav_div}>
-
-
-            <Navbar />
-
-            <SmallCarousel />
-
-
-        
-
-          </div>
-
-          <div className={styles.hero_text}>
-            <h1 className={styles.hone}>Meet the World</h1>
-            <p className={styles.sub_text}>36,000 properties, 178 countries • Over 13 million verified guest reviews • 24/7 customer service</p>
+      </div>
 
 
 
-            <div className={styles.topnav}>
-              <form className={styles.search_form} action="">
-                <button type="submit"><i className="fa fa-search"></i></button>
-                <input type="text" placeholder="Search.." name="search" />
-              </form>
-            </div>
-
-
-            <br />
-
-
-            <button className={styles.go} type="submit ">  Let's Go!</button>
-          </div>
-        </div>
-
-      </section>
 
       <section className={`${styles.top_hos_div}`}>
 
@@ -79,11 +51,12 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image className={`${styles.car_img} `} src="/images/img.jpg" width={606} height={220} layout="responsive" />
+              <img className={`${styles.car_img} img-fluid `} src="/images/img3.jpg" />
 
             </div>
 
             <div className={styles.detail}>
+
               <div>
                 <h6>Hostel Name</h6>
                 <p>Hostel Address</p>
@@ -102,7 +75,7 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image className={`${styles.car_img} `} src="/images/img1.jpg" width={606} height={220} layout="responsive" />
+              <img className={`${styles.car_img} img-fluid `} src="/images/img1.jpg" />
 
             </div>
 
@@ -125,7 +98,7 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image className={`${styles.car_img} `} src="/images/img2.jpg" width={606} height={220} layout="responsive" />
+              <img className={`${styles.car_img} img-fluid `} src="/images/img2.jpg" />
 
             </div>
             <div className={styles.detail}>
@@ -146,7 +119,7 @@ export default function Home() {
 
             <div className={styles.img_div}>
 
-              <Image className={`${styles.car_img} `} src="/images/img3.jpg" width={606} height={220} layout="responsive" />
+              <img className={`${styles.car_img} img-fluid `} src="/images/img3.jpg" />
 
             </div>
 
@@ -181,7 +154,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg1.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg1.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -192,7 +165,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg2.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg2.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -203,7 +176,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg3.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg3.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -214,7 +187,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg4.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg4.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -225,7 +198,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg5.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg5.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -236,7 +209,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg6.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg6.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -247,7 +220,7 @@ export default function Home() {
 
             <div className={styles.cir_car} >
 
-              <Image src="/images/cirImg7.jpg" className={styles.cir_car_img} width={125} height={127} />
+              <img src="/images/cirImg7.jpg" className={styles.cir_car_img} width={125} height={127} />
 
               <div className={styles.locName}>
                 <h6>Location name</h6>
@@ -263,13 +236,40 @@ export default function Home() {
         </div>
 
 
-
       </section>
+
+      <section className={styles.commingSoon}>
+
+        <div className="container">
+          <div className={`row`}>
+
+            <div className={`col-6`}>
+              <img src="/images/commingSoon.png" alt="Comming Soon" width="680" height="380" />
+            </div>
+
+            <div className={`col-6`}>
+
+              <h2>World's leading chain of hotels and homes</h2>
+              <p>More Destinations. More Ease. More Affordable.</p>
+
+              <p>
+
+                <h1>35 </h1>Countries <h1>/</h1> <h1>157,000+ </h1>Hotels & Homes
+
+              </p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
 
       <section>
         <Footer />
       </section>
-
 
     </>
   )

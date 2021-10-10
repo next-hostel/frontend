@@ -1,6 +1,5 @@
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
-import { Button } from 'reactstrap';
 import { useState } from 'react';
 import Router from 'next/router';
 import Sidebar from './Sidebar';
@@ -69,6 +68,7 @@ const Navbar = () => {
                 <div className={styles.element}>
 
 
+
                     <div className={styles.hostelEle}>
                         <span><i className="far fa-building"></i></span>
                         <Link href="/">Hostel</Link>
@@ -89,10 +89,8 @@ const Navbar = () => {
 
 
 
-                </div>
 
 
-                <div className={styles.wrraper}>
 
                     {!isAuth() && (
 
@@ -108,7 +106,7 @@ const Navbar = () => {
 
                             <div className={styles.userBtn}>
                                 <span ><i className="fas fa-user"></i></span>
-                                <Link href="/signup">Sign Up</Link>
+                                <Link href="/signup">  SignUp</Link>
                             </div>
                         </>
 

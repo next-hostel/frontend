@@ -4,49 +4,46 @@
 
 .top_hos_div{
     margin-top: 5%;
-    padding: 5% 5% 7%;
+    padding: 5% 7% 7%;
 }
 
 .car_item{
-    width: 606px;
-    height: 330px;
+    width: 35vw;
     padding: 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #d7d7d7;
     border-radius: 8px;
-    /* box-shadow: 1px 1px 1px grey ; */
 }
 
 .car_img{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    width: 60vw !important;
-    height: 100% !important;
 
 }
 
-.detail{
-    width: 606px;
-    display: flex;
-    justify-content: space-around;
-}
 
 .img_div{
-    width: 606px;
-    height: 220px;
+    width: 35vw;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 
+.detail{
+  width: 150%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+}
 
 .cir_car_sec{
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 15px 0 5%;
+  flex-direction: column;
 }
-
 
 
 .cir_car_div{
@@ -84,11 +81,71 @@ color:#2a2a2e ;
     color: rgb(115, 115, 115);
 }
 
+.commingSoon{
+      
+      background-color: #f3f5f7;
+}
+
 
 
 @media screen and (max-width: 768px) {
     .smallCarousel{
         display:flex;
+    }
+
+    .car_item{
+      width: 50vw;
+      height: max-content;
+      padding: 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #d7d7d7;
+      border-radius: 8px;
+  }
+  
+  .car_img{
+      height: 25vw;
+      width: 50vw;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  
+  }
+  
+  
+  .img_div{
+    
+      height: 25vw;
+      width: 50vw;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+
+    .detail{
+      display: flex;
+      font-size: 12px;
+      justify-content: space-between;
+      width: 40vw;
+      /* padding-bottom: 2%; */
+    }
+
+    .detail h6{
+      font-size: 12px;
+
+    }
+
+    .detail h5{
+      font-size: 12px;
+    }
+
+    .detail button{
+      font-size: 10px;
+      padding: 1px 2px;
+
+    }
+
+    .commingSoon{
+      display: none;
     }
     
 }

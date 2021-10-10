@@ -1,0 +1,202 @@
+
+.columns {
+    width: 100%;
+    
+    }
+  
+    .heading{
+      text-align: center;
+    }
+  
+    .column_2{
+      background-size: cover; 
+      overflow: hidden;
+    }
+  
+    .column_1, .column_2 {
+      width:100%;
+    }
+    @media (min-width: 48em) {
+      .column_1 {
+        width: 28%;
+        float:left;
+        margin-left:2%;
+      }
+      .column_2 {
+        width: 68%;
+        float:left;
+        margin-left:2%;
+      }
+    
+      .columns {
+        content:"";
+        display: table;
+        clear: both;
+      }
+    }
+       
+    
+      .box {
+        
+        height: auto;
+        margin-top: 10%;
+        width: 100%;
+        padding: 2.5rem;
+        box-sizing: border-box;
+        border: 1px solid #dadce0;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+    
+      }
+      
+      .box h2 {
+        margin: 0px 0 -0.125rem;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        color: #202124;
+        font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      
+      .box .inputBox label {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        padding: 0.625rem 0;
+        font-size: 1rem;
+        color: grey;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      
+     
+      .box .inputBox .input:focus {
+        outline: none;
+        border: 2px solid #000;
+      }
+  
+      .box input[type="submit"] {
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #1a73e8;
+        padding: 0.625rem 1.25rem;
+        cursor: pointer;
+        border-radius: 0.312rem;
+        font-size: 1rem;
+        float: right;
+      }
+      
+      .box input[type="submit"]:hover {
+        background-color: #287ae6;
+        box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+      }
+    
+      /* style inputs and link buttons */
+    .input,
+    .btn {
+      width: 100%;
+      padding: 12px;
+      /* border: none; */
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none; /* remove underline from anchors */
+    }
+    
+    .input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+    
+    
+    
+    .google {
+      background-color: rgb(66, 133, 244);
+      color: white;
+    }
+    
+    /* style the submit button */
+    .input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Two-column layout */
+    .col {
+      float: left;
+      width: 100%;
+      margin: auto;
+      padding: 0 50px;
+      margin-top: 6px;
+    }
+    .google {
+     background-color: rgb(66, 133, 244);
+      color: white;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  
+    .loginWrraper{
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+    }
+  
+    .loginBtn{
+      width: 30%;
+      background-color: #0b7dda;
+      opacity: 0.85;
+      margin-right: 5px;
+    }
+    
+    
+    
+    
+    
+    /* horizontal line */
+    
+    .or {
+                display: flex;
+                flex-direction: row;
+            }
+              
+            .or:before,
+            .or:after {
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid #000;
+                margin: auto;
+            }
+    
+            .pic{
+              height: 100vh ;
+              width: auto;
+            }
+     
+    
+    /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+    @media only screen and (max-width:767px)
+    
+    {
+      .pic
+      {
+        display:none;
+      }
+     
+    }

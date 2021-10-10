@@ -46,7 +46,7 @@ const Footer = () => {
                                 <Link href="/">
                                     <a >
                                         <i className="fas fa-envelope"></i>
-                                        abc@gmail.com
+                                        pragatipriya8875@gmail.com
                                     </a>
                                 </Link>
                             </div>

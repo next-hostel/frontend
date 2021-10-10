@@ -1,6 +1,7 @@
 import { withRouter } from 'next/router';
 import SigninComponent from '../components/auth/SigninComponent';
 import Layout from '../components/Layout';
+import Login from '../components/Login'
 
 
 
@@ -24,3 +25,8 @@ const signin = ({ router }) => {
 }
 
 export default withRouter(signin);
+
+
+import React from 'react'
+
+
