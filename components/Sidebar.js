@@ -1,7 +1,6 @@
 
 import styles from '../styles/Sidebar.module.css'
 import Link from 'next/link';
-import { Button } from 'reactstrap';
 import { useState } from 'react';
 
 const Sidebar = () => {
