@@ -6,6 +6,6 @@ module.exports = {
         PRODUCTION: true,
         DOMAIN_DEVELOPMENT: 'http://localhost:3000',
         DOMAIN_PRODUCTION: 'https://hostelstartup.herokuapp.com',
-        GOOGLE_CLIENT_ID: '225888385191-bmtbpuvrkjfnlmkc2gtg03n9io69q15k.apps.googleusercontent.com',
+        GOOGLE_CLIENT_ID: '225888385191-fl38sq1v28osdmvtvndgn6a8igo0t0rf.apps.googleusercontent.com',
     }
 };
