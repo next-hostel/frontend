@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../styles/Searchbar.module.css'
 
 
@@ -8,41 +7,59 @@ const SearchBar = () => {
         <>
             {/* search bar starts */}
 
-            <div className={`${styles.searchDiv} `}>
-                <div className={``}>
+            <div className={`${styles.searchDiv}  `}>
+
+
+
+                <div className="">
 
                     <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
 
                 </div>
-                <div className={`${styles.searchBar}  `}>
 
-                    <div>
-                        <fieldset className={styles.seFieldset}>
 
-                            <input className={styles.seInput} type="text" placeholder="Search by city , hostel, or neighborhood" />
+                <div className={` container `}>
+                    <div className={`row ${styles.searchBar}`}>
+                        <div className={`col-lg-6`}>
+                            <fieldset className={styles.seFieldset}>
 
-                        </fieldset>
-                    </div>
+                                <input className={`${styles.seInput} ${styles.fieldBorder}`} type="text" placeholder="Search by city , hostel, or neighborhood" />
 
-                    <div>
-                        <fieldset className={styles.seFieldset}>
+                            </fieldset>
+                        </div>
 
-                            <input className={styles.seDate} type="date" min="2018-01-01" max="2019-01-01"  />
+                        <div className={`col-lg-2`}>
+                            <fieldset className={styles.seFieldset}>
+                                <select className={`${styles.typeSelect} ${styles.fieldBorder}`}>
+                                    <option value="All">All</option>
+                                    <option value="Hostel">Hostel</option>
+                                    <option value="PG">PG</option>
+                                    <option value="Mess">Mess</option>
 
-                        </fieldset>
-                    </div>
+                                </select>
+                            </fieldset>
+                        </div>
 
-                    <div>
-                        <fieldset className={styles.seFieldset}>
+                        <div className={`col-lg-2`}>
+                            <fieldset className="">
+                                <select className={`${styles.fieldBorder}`} >
+                                    <option value="All">All</option>
+                                    <option value="Boys">Boys</option>
+                                    <option value="Girls">Girls</option>
+                                </select>
+                            </fieldset>
+                        </div>
 
-                            <button className={`${styles.search} btn btn-primary `}> Search </button>
+                        <div className={`col-lg-2`}>
+                            <button className={`${styles.search}  btn btn-primary `}> Search </button>
 
-                        </fieldset>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
+
 
 
             {/* search bar starts ends */}

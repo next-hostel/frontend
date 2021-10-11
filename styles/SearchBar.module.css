@@ -1,60 +1,31 @@
-/* searchBar */
-
 .searchDiv{
-    margin-top: 5px;
-    background-color: #DB7093;
-    padding: 15px 0;    
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    background-color: #0b7dda;
+    padding: 2% 0;
 }
 
-
-
 .searchBarHead{
-    display: flex;
-    justify-content: center;
     color: white;
-    width: 100%;
-
+    margin-bottom: 2%;
 }
 
 .searchBar{
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    border-radius: 2px;
-    padding: 10px 5px;
     background-color: white;
-    width: 60%;
-    /* color: #c4a998; */
-
+    align-items: center;
+    padding: 1% 7%;
+    border-radius: 3px;
 }
 
-/* .seFieldset{
-
-} */
-
-.seInput{
+.seFieldset{
+    display: flex;
+    justify-content: center;
     border: none;
-    border-right: 1px gray solid;
-    outline: none;
-    margin: 0 10px;
-    width: 300px;
-    margin-right: 100%;
+    border-right: 1px solid black;
 }
 
-
-.seDate{
-    border: none;
-    border-right: 1px solid gray;
-    outline: none;
-    margin: 0 10px;
+.fieldBorder{
+    width: 80%;
+   border: none;
 }
-
-.search{
-    margin: 0 10px;
-}
-
-
-

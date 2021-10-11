@@ -53,7 +53,7 @@ const Navbar = () => {
 
             <div className={styles.navabar}>
 
-                <div onClick={showSidebar} className={styles.wrraper}>
+                <div  className={styles.wrraper}>
                     <div className={styles.toggleBar}>
                         <span onClick={showSidebar} className={styles.closeBtn}><i className={toggler} ></i></span>
 
