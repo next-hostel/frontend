@@ -1,11 +1,10 @@
-import styles from '../styles/Searchbar.module.css'
 
 
 
 const Search = () => {
     return (
         <>
-            <div className={`${styles.searchDiv}  `}>
+            {/* <div className={`${styles.searchDiv}  `}>
 
 
 
@@ -56,7 +55,8 @@ const Search = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
+            <h1>hello</h1>
 
         </>
     )
