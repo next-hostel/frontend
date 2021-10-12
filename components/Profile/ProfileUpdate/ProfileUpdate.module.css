@@ -1,0 +1,108 @@
+.grand_parent
+    { 
+      width: 100vw; 
+      height:100vh;
+      background: white; 
+      color: #fff;
+    }
+    .title{
+      font-size: 4rem;
+      padding: 20px 0;
+      text-align: center;
+      color: #000;
+    }
+    .smallHead{
+      color: black;
+      text-align: left;
+      margin: 40px;
+      font-size: 25px;
+      font-weight: bolder;
+      font-family:'times-new-roman';
+      justify-content: space-between;
+    }
+
+    .smallHead i{
+        cursor: pointer;
+    }
+
+    .heads{
+      color: black;
+      text-align: left;
+      margin: 25px 40px 20px 40px;
+      font-size: 20px;
+      font-family:'arial';
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .inbox{
+      color: black;
+      text-align: left;
+      margin: 0px 30px 10px 40px;
+      font-size: 20px;
+      height: 35px;
+      font-family:'arial';
+      justify-content: space-between;
+    }
+    .name{
+      color: black;
+      text-align: left;
+      margin: -10px 40px;
+      font-size: 20px;
+      font-family:'arial';
+      justify-content: space-between;
+    }
+    .lasttext{
+      color: black;
+      text-align: left;
+      margin: 0 40px;
+      font-size: 15px;
+      font-family:'arial';
+      justify-content: space-between;
+    }
+    .update_pass{
+      color: #fff;
+      text-align: center;
+      margin: 0 40px;
+      margin-top: 15px;
+      width: 80px;
+      font-size: 20px;
+      font-family:'arial';
+      background-color: #1ab64f;
+      border: none;
+      border-radius: 3px;
+    
+    }
+    .parents
+    { 
+      width: 80vw; 
+      height: auto; 
+      margin: auto;
+      display: flex;  
+      justify-content: space-around;
+      flex-wrap: wrap; 
+      transition: all 0.2 linear;
+    }
+    .child{
+      background-color:#81ecec;
+      border: 1px ;
+      box-shadow: 0 0 20px #bac3c3;
+      flex:1 1 200px;
+      margin: 20px;
+    }
+    
+    .child:first-child{
+      background:white;
+      height: 480px;
+    }
+    .child:last-child{
+      background: white;
+      height: 480px;
+    }
+    .fa-edit{
+      font-size: 25px;
+      color:black;
+      text-align:left;
+    }
+    @media (max-width: 768px){
+      .grand_parent{height:auto; }
+    }

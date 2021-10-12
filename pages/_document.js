@@ -16,6 +16,8 @@ class MyDocument extends Document {
             {/* Font Awesome */}
             <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossOrigin="anonymous"/>
        
+            <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet" />
+
         </Head>
 
         <body>

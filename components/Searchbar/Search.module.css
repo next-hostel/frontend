@@ -90,7 +90,7 @@
     border-color: #128036;
 }
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     .seFieldset{
         border: none;
@@ -99,16 +99,17 @@
     .seInput{
         border-bottom: 1px solid black;
     }
+   
+}
 
-    .seInput
-
+@media screen and (max-width:786px) {
     .search{
+        display: none;
         border-radius: 0;
         width: inherit;
         height: inherit;
         padding: 0;
 
     }
-
-   
-} */
+    
+}
