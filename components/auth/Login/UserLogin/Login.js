@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { signin, authenticate, isAuth } from '../../action/auth';
+import { signin, authenticate, isAuth } from '../../../../action/auth';
 import Router from 'next/router';
 import Link from 'next/link';
 
-import styles from '../../styles/Login.module.css'
-import LoginGoogle from './LoginGoogle'
+import styles from './Login.module.css'
+import LoginGoogle from '../../LoginGoogle'
 
 const Login = () => {
 
@@ -88,12 +88,12 @@ const Login = () => {
 
                         <button className={`${styles.loginBtn} btn btn-primary`}>Login</button>
                         <b>
-                            <a href=""> Forget Password</a>
+                            <Link href="/"> Forget Password</Link>
                         </b>
                     </div>
                     <br />
 
-                    <span>Don't have an account? <b><a href="/" >Sign up</a></b></span>
+                    <span>Don't have an account? <b><Link href="/signup" >Sign up</Link></b></span>
 
 
                 </div>
