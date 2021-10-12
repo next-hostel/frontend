@@ -2,11 +2,9 @@ import styles from '../styles/Searchbar.module.css'
 
 
 
-const Searchbar = () => {
+const Search = () => {
     return (
         <>
-            {/* search bar starts */}
-
             <div className={`${styles.searchDiv}  `}>
 
 
@@ -60,11 +58,8 @@ const Searchbar = () => {
                 </div>
             </div>
 
-
-
-            {/* search bar starts ends */}
         </>
     )
 }
 
-export default Searchbar
+export default Search

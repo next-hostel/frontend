@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Carousel from 'react-elastic-carousel';
 import SmallCarousel from '../components/SmallCarousel';
 import Footer from '../components/Footer';
-import Searchbar from '../components/Searchbar';
+import Search from '../components/Search';
 
 
 export default function Home() {
@@ -34,10 +34,10 @@ export default function Home() {
       </div>
 
       <div className="">
-        <Searchbar/>
+        <Search />
       </div>
 
-      
+
 
 
 
