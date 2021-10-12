@@ -1,7 +1,7 @@
 import { withRouter } from 'next/router';
 import Login from "../components/auth/Login";
 import Navbar from "../components/Navbar";
-import Searchbar from '../components/Searchbar';
+
 
 
 const signin = ({ router }) => {
@@ -19,10 +19,7 @@ const signin = ({ router }) => {
         <>
         <Navbar/>
 
-        <section>
-        <Searchbar/>
-      </section>
-      
+       
           
             <Login />
             {showRedirectMessage()}
