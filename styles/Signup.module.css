@@ -1,45 +1,20 @@
 
-.columns {
-    width: 100%;
-    
-    }
   
     .heading{
       text-align: center;
     }
   
-    .column_2{
-      background-size: cover; 
-      overflow: hidden;
+    .column{
+      width: 100%;
+      padding-left: 10px;
     }
-  
-    .column_1, .column_2 {
-      width:100%;
-    }
-    @media (min-width: 48em) {
-      .column_1 {
-        width: 28%;
-        float:left;
-        margin-left:2%;
-      }
-      .column_2 {
-        width: 68%;
-        float:left;
-        margin-left:2%;
-      }
-    
-      .columns {
-        content:"";
-        display: table;
-        clear: both;
-      }
-    }
+   
        
     
       .box {
         
         height: auto;
-        margin-top: 10%;
+        margin-top: 5%;
         width: 100%;
         padding: 2.5rem;
         box-sizing: border-box;
@@ -174,19 +149,21 @@
     .or {
                 display: flex;
                 flex-direction: row;
+                font-size: 18px;
+                align-items: center;
+                color: #666;
             }
               
             .or:before,
             .or:after {
                 content: "";
                 flex: 1 1;
-                border-bottom: 2px solid #000;
-                margin: auto;
+                border-bottom: 1px solid #666;
+                margin: 0 15px;
             }
     
             .pic{
-              height: 100vh ;
-              width: auto;
+              height: 85vh ;
             }
      
     

@@ -18,7 +18,7 @@ const SearchBar = () => {
                 </div>
 
 
-                <div className={` container `}>
+                <div className={`${styles.searchWrraper} container `} >
                     <div className={`row ${styles.searchBar}`}>
                         <div className={`col-lg-6`}>
                             <fieldset className={styles.seFieldset}>
@@ -41,8 +41,8 @@ const SearchBar = () => {
                         </div>
 
                         <div className={`col-lg-2`}>
-                            <fieldset className="">
-                                <select className={`${styles.fieldBorder}`} >
+                            <fieldset className={``}>
+                                <select className={`${styles.fieldBorder} ${styles.sSelect}`} >
                                     <option value="All">All</option>
                                     <option value="Boys">Boys</option>
                                     <option value="Girls">Girls</option>
@@ -50,7 +50,7 @@ const SearchBar = () => {
                             </fieldset>
                         </div>
 
-                        <div className={`col-lg-2`}>
+                        <div className={`${styles.searchWrrap} col-lg-2`}>
                             <button className={`${styles.search}  btn btn-primary `}> Search </button>
 
                         </div>

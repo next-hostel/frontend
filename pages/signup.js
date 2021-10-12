@@ -1,15 +1,16 @@
 import React from 'react'
 import SignupC from '../components/auth/SignupC'
 import Layout from '../components/Layout'
+import Navbar from "../components/Navbar"
 
 const Signup = () => {
     return (
-        <Layout>
-           
-                        <SignupC />
-                    
+        <>
+            <Navbar />
+            <SignupC />
 
-        </Layout>
+
+        </>
     )
 }
 

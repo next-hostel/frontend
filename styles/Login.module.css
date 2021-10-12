@@ -1,6 +1,7 @@
 
 .columns {
   width: 100%;
+  padding-left: 10px;
   
   }
 
@@ -8,38 +9,13 @@
     text-align: center;
   }
 
-  .column_2{
-    background-size: cover; 
-    overflow: hidden;
-  }
-
-  .column_1, .column_2 {
-    width:100%;
-  }
-  @media (min-width: 48em) {
-    .column_1 {
-      width: 28%;
-      float:left;
-      margin-left:2%;
-    }
-    .column_2 {
-      width: 68%;
-      float:left;
-      margin-left:2%;
-    }
-  
-    .columns {
-      content:"";
-      display: table;
-      clear: both;
-    }
-  }
+ 
      
   
     .box {
       
       height: auto;
-      margin-top: 10%;
+      margin-top: 5%;
       width: 100%;
       padding: 2.5rem;
       box-sizing: border-box;
@@ -165,6 +141,9 @@
     margin-right: 5px;
   }
   
+  .gogBtn{
+    padding: 0 100px;
+  }
   
   
   
@@ -174,18 +153,20 @@
   .or {
               display: flex;
               flex-direction: row;
+              font-size: 18px;
+              align-items: center;
           }
             
           .or:before,
           .or:after {
               content: "";
               flex: 1 1;
-              border-bottom: 2px solid #000;
-              margin: auto;
+              border-bottom: 1px solid rgb(93, 108, 116);
+              margin: 0 15px ;
           }
   
           .pic{
-            height: 100vh ;
+            height: 88.5vh ;
             width: auto;
           }
    

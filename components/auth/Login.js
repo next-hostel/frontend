@@ -114,8 +114,8 @@ const Login = () => {
     return (
         <>
 
-            <div className={styles.columns}>
-                <div className={`${styles.column} ${styles.column_1}`}>
+            <div className={`${styles.columns} row `}>
+                <div className={`  col-lg-4 col-md-6`}>
                     <div className={styles.box}>
                         <div className={`container`}>
 
@@ -124,23 +124,24 @@ const Login = () => {
                             {showMessage()}
 
                             <div className={`row-fluid`}>
-                                <h2 className={styles.heading}><b>Make this page responsive</b></h2>
+                                <h2 className={styles.heading}><b>Log in to your account</b></h2>
                                 <br />
                                 <br />
 
+                                <div >
+                                    <LoginGoogle />
 
-                                <LoginGoogle />
+                                </div>
+
                                 <br />
                             </div>
 
 
 
                         </div>
-                        <br />
-                        <br />
                         {/* <!--- or horizonatl line--> */}
                         <div>
-                            <h3 className={styles.or}>OR</h3>
+                            <h3 className={styles.or}>or</h3>
                         </div>
                         {showForm && signinForm()}
 
@@ -149,7 +150,7 @@ const Login = () => {
                     </div>
                 </div>
 
-                <div className={`${styles.column} ${styles.column_2} mt-3`} >
+                <div className={`  mt-3 col-lg-8 col-md-6 `} >
                     <img className={`img-fluid ${styles.pic}`} src="/images/pic1.jpg" />
                 </div>
             </div>

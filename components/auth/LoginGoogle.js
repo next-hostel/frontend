@@ -27,13 +27,14 @@ const LoginGoogle = () => {
     };
 
     return (
-        <div className="pb-0">
+        <div >
             <GoogleLogin
                 clientId={`${GOOGLE_CLIENT_ID}`}
                 buttonText="Login with Google"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
                 theme="dark"
+                
             />
         </div>
     );

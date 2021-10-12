@@ -33,23 +33,23 @@ const SignupC = () => {
 
 
         preSignup(user)
-        .then(data => {
-            if (data.error) {
-                setValues({ ...values, error: data.error, loading: false });
+            .then(data => {
+                if (data.error) {
+                    setValues({ ...values, error: data.error, loading: false });
 
-            } else {
-                setValues({
-                    ...values,
-                    name: '',
-                    email: '',
-                    password: '',
-                    error: '',
-                    loading: false,
-                    message: data.message,
-                    showForm: false
-                })
-            }
-        })
+                } else {
+                    setValues({
+                        ...values,
+                        name: '',
+                        email: '',
+                        password: '',
+                        error: '',
+                        loading: false,
+                        message: data.message,
+                        showForm: false
+                    })
+                }
+            })
 
     };
 
@@ -68,67 +68,68 @@ const SignupC = () => {
 
             <form onSubmit={handleSubmit}>
 
-                            <div className={`form-group`}>
-                                <label>Name: </label>
-                                <input
-                                 type="text"
-                                  className={`${styles.input} form-control`} 
-                                  value={name}
-                                 onChange={handleChange('name')}
-                                  
-                                   />
-                            </div>
+                <div className={`form-group`}>
+                    <label>Name: </label>
+                    <input
+                        type="text"
+                        className={`${styles.input} form-control`}
+                        value={name}
+                        onChange={handleChange('name')}
+
+                    />
+                </div>
 
 
-                            <div className={`form-group`}>
-                                <label>Email address: </label>
-                                <input
-                                 type="email"
-                                  className={`${styles.input} form-control`}
-                                  value={email}
-                                  onChange={handleChange('email')}
+                <div className={`form-group`}>
+                    <label>Email address: </label>
+                    <input
+                        type="email"
+                        className={`${styles.input} form-control`}
+                        value={email}
+                        onChange={handleChange('email')}
 
-                                   />
-                            </div>
-                            <div className={`form-group`}>
-                                <label>Password: </label>
-                                <input 
-                                type="password"
-                                 className={`${styles.input} form-control`}
-                                 value={password}
-                                 onChange={handleChange('password')}
+                    />
+                </div>
+                <div className={`form-group`}>
+                    <label>Password: </label>
+                    <input
+                        type="password"
+                        className={`${styles.input} form-control`}
+                        value={password}
+                        onChange={handleChange('password')}
 
-                                  />
-                            </div>
+                    />
+                </div>
 
-                            <div className={styles.loginWrraper}>
+                <div className={styles.loginWrraper}>
 
-                                <div className="">
+                    <div className="">
 
-                                    <button className={`${styles.loginBtn} btn btn-primary`}>Sign Up</button>
+                        <button className={`${styles.loginBtn} btn btn-primary`}>Sign Up</button>
 
-                                </div>
-                                <br />
+                    </div>
+                    <br />
 
-                                <span>already have an account? <b><a href="/" >Login</a></b></span>
+                    <span>already have an account? <b><a href="/" >Login</a></b></span>
 
 
-                            </div>
-                        </form>
+                </div>
+            </form>
         );
     };
 
 
     return (
         <>
-            <div className={styles.columns}>
-                <div className={`${styles.column} ${styles.column_1}`}>
-                    <div className={styles.box}>
-                        <div className={`container`}>
-                        {showError()}
-            {showLoading()}
-            {showMessage()}
-                            
+           
+                <div className={`${styles.column} row`}>
+                    <div className={`col-lg-4 col-md-6`}>
+                        <div className={styles.box}>
+                            <div className={`container`}>
+                                {showError()}
+                                {showLoading()}
+                                {showMessage()}
+
                                 <div className={`row-fluid`}>
                                     <h2 className={styles.heading}><b>Make this page responsive</b></h2>
                                     <br />
@@ -138,27 +139,26 @@ const SignupC = () => {
                                 </div>
 
 
-                           
+
+                            </div>
+                            {/* <!--- or horizonatl line--> */}
+                            <div>
+                                <h3 className={styles.or}>OR</h3>
+                            </div>
+
+
+
+                            {showForm && signupForm()}
+
+
                         </div>
-                        <br />
-                        <br />
-                        {/* <!--- or horizonatl line--> */}
-                        <div>
-                            <h3 className={styles.or}>OR</h3>
-                        </div>
-                        
+                    </div>
 
-
-                        {showForm && signupForm()}
-
-
+                    <div className={` col-lg-8 col-md-6 mt-3`} >
+                        <img className={`img-fluid ${styles.pic}`} src="/images/pic1.jpg" />
                     </div>
                 </div>
-
-                <div className={`${styles.column} ${styles.column_2} mt-3`} >
-                    <img className={`img-fluid ${styles.pic}`} src="/images/pic1.jpg" />
-                </div>
-            </div>
+            
 
         </>
     )

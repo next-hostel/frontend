@@ -1,7 +1,6 @@
 import { withRouter } from 'next/router';
-
-import Layout from '../components/Layout';
 import Login from "../components/auth/Login";
+import Navbar from "../components/Navbar";
 
 
 
@@ -17,11 +16,12 @@ const signin = ({ router }) => {
 
 
     return (
-        <Layout>
+        <>
+        <Navbar/>
           
             <Login />
             {showRedirectMessage()}
-        </Layout>
+        </>
     )
 }
 
