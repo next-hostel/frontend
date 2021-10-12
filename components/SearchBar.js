@@ -2,7 +2,7 @@ import styles from '../styles/Searchbar.module.css'
 
 
 
-const SearchBar = () => {
+const Searchbar = () => {
     return (
         <>
             {/* search bar starts */}
@@ -67,4 +67,4 @@ const SearchBar = () => {
     )
 }
 
-export default SearchBar
+export default Searchbar
