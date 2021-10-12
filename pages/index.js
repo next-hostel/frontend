@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Carousel from 'react-elastic-carousel';
 import SmallCarousel from '../components/SmallCarousel';
 import Footer from '../components/Footer';
-import Search from '../components/Search';
+import Search from '../components/Searchbar/Search';
 
 
 export default function Home() {
