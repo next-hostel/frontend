@@ -17,7 +17,7 @@ const Search = () => {
 
                 <div className={`${styles.searchWrraper} container `} >
                     <div className={`row ${styles.searchBar}`}>
-                        <div className={`col-lg-6`}>
+                        <div className={`col-lg-6  col-md-12  col-12 `}>
                             <fieldset className={styles.seFieldset}>
 
                                 <input className={`${styles.seInput} ${styles.fieldBorder}`} type="text" placeholder="Search by city , hostel, or neighborhood" />
@@ -25,7 +25,7 @@ const Search = () => {
                             </fieldset>
                         </div>
 
-                        <div className={`col-lg-2`}>
+                        <div className={`col-lg-2 col-md-6 col-6 `}>
                             <fieldset className={styles.seFieldset}>
                                 <select className={`${styles.typeSelect} ${styles.fieldBorder}`}>
                                     <option value="All">All</option>
@@ -37,7 +37,7 @@ const Search = () => {
                             </fieldset>
                         </div>
 
-                        <div className={`col-lg-2`}>
+                        <div className={` col-lg-2 col-md-6 col-6 `}>
                             <fieldset className={``}>
                                 <select className={`${styles.fieldBorder} ${styles.sSelect}`} >
                                     <option value="All">All</option>
@@ -47,7 +47,7 @@ const Search = () => {
                             </fieldset>
                         </div>
 
-                        <div className={`${styles.searchWrrap} col-lg-2`}>
+                        <div className={`${styles.searchWrrap} col-lg-2  col-12 `}>
                             <button className={`${styles.search} `}> Search </button>
 
                         </div>
