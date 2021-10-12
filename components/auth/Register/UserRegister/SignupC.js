@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { signup, isAuth, preSignup } from "../../action/auth";
+import { signup, isAuth, preSignup } from "../../../../action/auth";
 import Router from 'next/router';
 import Link from 'next/link';
-import styles from '../../styles/Signup.module.css';
-import LoginGoogle from './LoginGoogle'
+import styles from './Signup.module.css';
+import LoginGoogle from '../../LoginGoogle'
 
 
 const SignupC = () => {
@@ -110,7 +110,7 @@ const SignupC = () => {
                     </div>
                     <br />
 
-                    <span>already have an account? <b><a href="/" >Login</a></b></span>
+                    <span>already have an account? <b><Link href="/signin" >Login</Link></b></span>
 
 
                 </div>
