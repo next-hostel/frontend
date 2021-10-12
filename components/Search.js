@@ -9,7 +9,7 @@ const Search = () => {
 
 
 
-                <div className="">
+                <div >
 
                     <h1 className={styles.searchBarHead}>World's Fasted Growing Hostel Chain</h1>
 

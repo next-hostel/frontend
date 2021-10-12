@@ -28,6 +28,7 @@ const LoginGoogle = () => {
     };
     
     return (
+        
        
         <div className="pb-0">
             <GoogleLogin
