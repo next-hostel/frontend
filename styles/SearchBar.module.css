@@ -1,4 +1,4 @@
-.searchDiv{
+/* .searchDiv{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,4 +88,8 @@
 .search:focus, .search:hover, .search:active{
     background-color: #128036;
     border-color: #128036;
+} */
+
+.hello{
+    color: red ;
 }
