@@ -51,7 +51,7 @@ const SearchBar = () => {
                         </div>
 
                         <div className={`${styles.searchWrrap} col-lg-2`}>
-                            <button className={`${styles.search}  btn btn-primary `}> Search </button>
+                            <button className={`${styles.search} `}> Search </button>
 
                         </div>
 
