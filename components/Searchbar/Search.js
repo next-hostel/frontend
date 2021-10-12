@@ -4,7 +4,7 @@ import styles from './Search.module.css'
 const Search = () => {
     return (
         <>
-            {/* <div className={`${styles.searchDiv}  `}>
+            <div className={`${styles.searchDiv}  `}>
 
 
 
@@ -55,8 +55,7 @@ const Search = () => {
                     </div>
 
                 </div>
-            </div> */}
-            <h1 className={styles.hello}>hello</h1>
+            </div>
 
         </>
     )
