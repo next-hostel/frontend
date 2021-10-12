@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Carousel from 'react-elastic-carousel';
 import SmallCarousel from '../components/SmallCarousel';
 import Footer from '../components/Footer';
-import Searchbar from '../components/Searchbar';
+
 
 
 export default function Home() {
@@ -33,9 +33,7 @@ export default function Home() {
 
       </div>
 
-      <section>
-        <Searchbar/>
-      </section>
+      
 
       
 
