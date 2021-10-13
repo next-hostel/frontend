@@ -37,7 +37,6 @@ display: none;
 
 .element{
     display: flex;
-    display: flex;
     font-size: large;
     height: 40px;
     align-items: flex-end;

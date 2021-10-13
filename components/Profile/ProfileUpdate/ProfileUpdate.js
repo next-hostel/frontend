@@ -4,7 +4,7 @@ import  styles from './ProfileUpdate.module.css'
 const Profileupdate = () => {
     return (
         <>
-            <div className={styles.grand_parent}>
+            <div className={`${styles.grand_parent} container `}>
                 <h1 className={styles.title}> Profile </h1>
                 <div className={styles.parents}>
                     <div className={styles.child}>
