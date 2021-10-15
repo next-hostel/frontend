@@ -117,7 +117,10 @@ const Navbar = () => {
                         <>
 
                             <div className={styles.searchBtn}>
-                                <button className={`btn btn-danger btn-sm`}>{`${isAuth().name}'s Dashboard`}</button>
+                                <button className={`btn btn-danger btn-sm`}><Link href="/user">
+                                <a> {`${isAuth().name}`}</a>
+                               
+                                </Link></button>
                             </div>
 
 

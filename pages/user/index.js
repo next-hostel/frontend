@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Router from 'next/router';
 import { getCookie, isAuth, updateUser } from '../../action/auth';
-import { userProfile, update } from '../../action/user';
+import { userProfile, getProfile, update } from '../../action/user';
 import { API } from '../../config';
 import Private from '../../components/auth/Private';
 import Layout from '../../components/Layout';
@@ -15,7 +15,7 @@ const UserIndex = () => {
 
         name: '',
         email: '',
-        password: '',
+        phone:'',
         error: false,
         success: false,
         loading: false,
@@ -25,7 +25,7 @@ const UserIndex = () => {
     const {
         name,
         email,
-        password,
+        phone,
         error,
         success,
         loading,
@@ -42,7 +42,8 @@ const UserIndex = () => {
                 setValues({
                     ...values,
                     name: data.name,
-                    email: data.email
+                    email: data.email,
+                    phone: data.phone
                 });
             }
         });
@@ -58,16 +59,14 @@ const UserIndex = () => {
     return (
         <Layout>
         <Private>
+        
             <UserProfile
-            username="Kshiti123"
-            name={values.name}
-            email={values.email}
-            phone={values.phone}
-            profession={values.profession}
-           
-
+             name={values.name}
+             email={values.email}
+             phone={values.phone}
              />
-        </Private>
+             </Private>
+       
         </Layout>
     )
 }
