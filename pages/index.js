@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
-import Carousel from 'react-elastic-carousel';
+import Carousel, { consts } from 'react-elastic-carousel';
 import SmallCarousel from '../components/SmallCarousel';
 import Footer from '../components/Footer';
 import Search from '../components/Searchbar/Search';
@@ -23,6 +23,15 @@ export default function Home() {
 
   ]
 
+  function myArrow ({ type, onClick, isEdge }) {
+    const pointer = type === consts.PREV ? <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i> : <i className={`${styles.rightArrow} fas fa-long-arrow-alt-right`}></i>
+    return (
+      <button onClick={onClick} disabled={isEdge} className={styles.myArrow}>
+        {pointer}
+      </button>
+    )
+  }
+
   return (
     <>
       <div className={styles.nav_div}>
@@ -44,7 +53,7 @@ export default function Home() {
 
       <section className={`${styles.top_hos_div}`}>
 
-        <Carousel breakPoints={breakPoints} pagination={false}>
+        <Carousel breakPoints={breakPoints} showArrows={true} pagination={false} renderArrow={myArrow}>
 
 
           <div className={styles.car_item}>
@@ -150,7 +159,7 @@ export default function Home() {
 
         <div className={styles.cir_car_div}>
 
-          <Carousel breakPoints={circle_breakpoints} showArrows={true} pagination={false} >
+          <Carousel breakPoints={circle_breakpoints} showArrows={false} pagination={false} >
 
             <div className={styles.cir_car} >
 
