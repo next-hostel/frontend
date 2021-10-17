@@ -1,5 +1,5 @@
 import React from 'react'
-import Hostelowner from '../../components/auth/HostelOwner'
+import Hostelowner from '../../components/auth/Hostelowner'
 import Layout from '../../components/Layout'
 import HostelOwner from '../../components/Profile/HostelOwner/HostelOwner'
 
