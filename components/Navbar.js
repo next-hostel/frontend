@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Router from 'next/router';
 import Sidebar from './Sidebar';
 import { signout, isAuth } from '../action/auth';
+import Avatar from "react-avatar";
 
 
 
@@ -53,7 +54,7 @@ const Navbar = () => {
 
             <div className={styles.navabar}>
 
-                <div  className={styles.wrraper}>
+                <div className={styles.wrraper}>
                     <div className={styles.toggleBar}>
                         <span onClick={showSidebar} className={styles.closeBtn}><i className={toggler} ></i></span>
 
@@ -116,11 +117,53 @@ const Navbar = () => {
 
                         <>
 
-                            <div className={styles.searchBtn}>
-                                <button className={`btn btn-danger btn-sm`}><Link href="/user">
+                            <div className={styles.userBtn}>
+                                {/* <button className={`btn btn-danger btn-sm`}><Link href="/user">
                                 <a> {`${isAuth().name}`}</a>
                                
-                                </Link></button>
+                                </Link></button> */}
+                                <Link href='/user'>
+                                    <a >
+                                        <Avatar
+                                            name={`${isAuth().name}`}
+
+                                            size="40"
+                                            round="20px"
+                                            textSizeRatio={1.50}
+                                            style={{ borderRadius: "50%" }}
+                                        />
+                                    </a>
+                                </Link>
+
+                            </div>
+
+
+                        </>
+
+                    )}
+
+
+                    {isAuth() && isAuth().role === 'hOwner' && (
+
+                        <>
+
+                            <div className={styles.userBtn}>
+                                {/* <button className={`btn btn-danger btn-sm`}><Link href="/user">
+                                    <a> {`${isAuth().name}`}</a>
+       
+                                        </Link></button> */}
+                                <Link href='/hostelOwner'>
+                                    <a >
+                                        <Avatar
+                                            name={`${isAuth().name}`}
+                                            size="40"
+                                            round="20px"
+                                            textSizeRatio={1.50}
+                                            style={{ borderRadius: "50%" }}
+                                        />
+                                    </a>
+                                </Link>
+
                             </div>
 
 

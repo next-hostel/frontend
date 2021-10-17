@@ -1,6 +1,6 @@
 import { withRouter } from 'next/router';
-import Login from "../components/auth/Login/UserLogin/Login";
-import Navbar from "../components/Navbar";
+import Login from "../../components/auth/Login/UserLogin/Login";
+import Navbar from "../../components/Navbar";
 
 
 const signin = ({ router }) => {

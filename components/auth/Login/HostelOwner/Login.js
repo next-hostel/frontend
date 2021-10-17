@@ -3,7 +3,7 @@ import { signin, authenticate, isAuth } from '../../../../action/auth';
 import Router from 'next/router';
 import Link from 'next/link';
 
-import styles from './Login.module.css'
+import styles from '../Login.module.css'
 import LoginGoogle from '../../LoginGoogle'
 
 const Login = () => {
@@ -39,11 +39,8 @@ const Login = () => {
                     if (isAuth() && isAuth().role === 'admin') {
                         Router.push('/admin');
                     }
-                    else if(isAuth() && isAuth().role === 'hOwner') {
-                        Router.push('/hostelOwner');
-                    }
                     else {
-                        Router.push(`/user`);
+                        Router.push('/user');
                     }
                 })
 

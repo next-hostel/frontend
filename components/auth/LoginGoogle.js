@@ -19,7 +19,11 @@ const LoginGoogle = () => {
                 authenticate(data, () => {
                     if (isAuth() && isAuth().role === 'admin') {
                         Router.push(`/admin`);
-                    } else {
+                    } 
+                    else if(isAuth() && isAuth().role === 'hOwner') {
+                        Router.push('/hostelOwner');
+                    }
+                    else {
                         Router.push(`/user`);
                     }
                 });
