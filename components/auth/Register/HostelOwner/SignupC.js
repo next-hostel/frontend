@@ -15,7 +15,7 @@ const SignupC = () => {
         error: '',
         loading: false,
         message: '',
-        role: 'user',
+        role: 'hOwner',
         showForm: true
     });
 
@@ -132,7 +132,7 @@ const SignupC = () => {
                                 {showMessage()}
 
                                 <div className={`row-fluid`}>
-                                    <h2 className={styles.heading}><b>Make this page responsive</b></h2>
+                                    <h2 className={styles.heading}><b>Make this page responsive Hostel Oener</b></h2>
                                     <br />
                                     <br />
                                     <LoginGoogle />

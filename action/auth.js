@@ -141,6 +141,18 @@ export const updateUser = (user, next) => {
     }
 };
 
+export const updatepassword = (user, next) => {
+    if (process.browser) {
+        if (localStorage.getItem('user')) {
+            let auth = JSON.parse(localStorage.getItem('user'));
+            auth = user;
+            localStorage.setItem('user', JSON.stringify(auth));
+            next();
+        }
+    }
+};
+
+
 export const forgotPassword = email => {
     return fetch(`${API}/forgot-password`, {
         method: 'PUT',
