@@ -42,7 +42,7 @@ export default function Home() {
 
       </div>
 
-      <div className="">
+      <div className={styles.searchDiv}>
         <Search />
       </div>
 
@@ -159,7 +159,7 @@ export default function Home() {
 
         <div className={styles.cir_car_div}>
 
-          <Carousel breakPoints={circle_breakpoints} showArrows={false} pagination={false} >
+          <Carousel breakPoints={circle_breakpoints} showArrows={false} enableAutoPlay autoPlaySpeed={3000}  >
 
             <div className={styles.cir_car} >
 

@@ -23,17 +23,6 @@ a:hover{
   
 }
 
-.mob-car .rec-arrow-left{
-  display: none;
-}
-
-.mob-car .rec-arrow-right{
-  display: none;
-}
-
-.mob-car .rec-dot{
-  display: none;
-}
 
 .mob-car .sc-gsTEea.rec.rec-item-wrapper{
   justify-content: flex-start;

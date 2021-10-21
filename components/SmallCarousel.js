@@ -16,7 +16,7 @@ const SmallCarousel = () => {
 
             <div className={`${styles.carousel} mob-car `}>
 
-                <Carousel breakPoints={breakPoints} >
+                <Carousel breakPoints={breakPoints} showArrows={false}  pagination={false}>
 
 
 
