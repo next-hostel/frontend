@@ -1,9 +1,24 @@
-import styles from './Setp1.module.css'
-import Navbar from '../../Navbar'
+import styles from './Setp1.module.css';
+import Navbar from '../../Navbar';
+import { useState } from 'react';
 
 import React from 'react'
 
+
+
 const Step1 = () => {
+
+    const [displayPane, setDisplayPane] = useState("displayNone")
+
+    function display() {
+        if (displayPane === "display") {
+            setDisplayPane("displayNone");
+        }
+        else {
+            setDisplayPane("display");
+        }
+    }
+
     return (
         <>
             <Navbar />
@@ -20,19 +35,81 @@ const Step1 = () => {
                         <p>Make sure you enter the correct address for a smooth verification. </p>
                         <br />
                         <div className={styles.inputFeild}>
-                            <input className={styles.locIn} type="text" placeholder="Enter Locality" />
-                            <i className={`fas fa-search-location ${styles.searchBtn}`}></i>
+                            <fieldset>
+                                <label className={`${styles.required}`} name="location">Enter Locality</label>
+                                <input className={`${styles.inputText} `} type="text" name="location" required />
+
+                            </fieldset>
+
+                            <i className={`fas fa-search-location ${styles.searchBtn}`} onClick={display}></i>
 
                         </div>
 
-                        <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.550107199182!2d75.69747551507372!3d30.221385481818313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1634755894793!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.550107199182!2d75.69747551507372!3d30.221385481818313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1634755894793!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+                        <div className={displayPane} >
+                            <div className={styles.bottomBox}>
 
 
+                                <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.550107199182!2d75.69747551507372!3d30.221385481818313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1634755894793!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+                                <fieldset>
+                                    <label className={`${styles.required}`} name="address">Address</label>
+                                    <input className={`${styles.inputText} `} type="text" name="address" required />
+
+                                </fieldset>
+
+                                <fieldset>
+                                    <label className={`${styles.required}`} name="pincode">Pincode</label>
+                                    <input className={`${styles.inputText} `} type="number" name="pincode" required />
+
+                                </fieldset>
+
+                                <fieldset>
+                                    <label className={``} name="landmark">Landmark</label>
+                                    <input className={`${styles.inputText} `} type="text" name="landmark" required />
+
+                                </fieldset>
+
+                                <fieldset>
+                                    <label className={`${styles.required}`} name="startTime">PG Operational</label>
+                                    <input className={`${styles.inputText} `} type="text" name="startTime" required />
+
+                                </fieldset>
+
+
+                                <fieldset>
+                                    <label className={`${styles.required}`} name="startTime" >PG is present in</label>
+                                    <select name="pgType" className={`${styles.select} `} >
+
+                                        <option value="-1">Select</option>
+                                        <option value="buliding">An independent building</option>
+                                        <option value="flat">An independent flat(s)</option>
+                                        <option value="society">Present in a society</option>
+
+                                    </select>
+
+                                </fieldset>
+
+
+                            </div>
+
+
+
+
+                            <div className={`${styles.submitbtn} `}>
+                                <div>
+                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                </div>
+                                <button className="btn btn-danger " >
+                                    Submit
+                                </button>
+                            </div>
 
                         </div>
-                        
+
+
+
+
+
 
 
                     </div>

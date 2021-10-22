@@ -17,23 +17,21 @@
 .main{
     padding: 0 7%;
     padding-top: 3%;
-    overflow: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
     height: 85vh;
 
 }
 
-.bottomBox{
-    padding-bottom: 7%;
-}
 
 .inputFeild{
     display: flex;
     flex-direction: row;
+    height: 60vh;
 }
 
 .inputText{  
-    height: 17px;  
+    height: 40px;  
     width: 100%;
     color: #606060;
     font-size: 16px;
@@ -64,38 +62,22 @@
     margin-bottom: 40px;
 }
 
-.inputText:active, .inputText:focus{
-    height: 30px;
-    
-    transition: 0.2s;
-
-}
-
-.inputText input[value=""]{
-    height: 40px;
-
-}
 
 
-.map{
-    margin-bottom: 40px;
-    height: 230px;
-    width: 415px;
-}
+
+
+
+
 
 .required:after{
     content: "*" ;
     color: red;
 }
 
-.searchBtn::after{
-    color: red;
-    cursor: pointer;
-}
+
 
 .submitbtn{
-    position: -webkit-sticky;
-    position: sticky;
+    position:sticky;
     bottom: 0;
     display: flex;
     justify-content: space-between;
