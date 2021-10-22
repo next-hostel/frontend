@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
-import Step1 from "../components/PG Post/Step1/Step1";
+import Step4 from "../components/PG Post/Step4/Step4";
 
 
 const Test = () => {
     return (
         <>
 
-            <Step1 />
+            <Step4 />
 
         </>
     )
