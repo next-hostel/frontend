@@ -41,7 +41,7 @@ const Step4 = () => {
                         <div>
 
                             <div className={styles.noBed}>
-                                <div id="room" className={active} onClick={select}>
+                                <div  className={active} onClick={select}>
                                     
 
                                     <div className={styles.iconDiv}>

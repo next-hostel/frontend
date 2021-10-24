@@ -22,7 +22,7 @@ const Step1 = () => {
                         <div className={styles.inputFeild}>
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Owner</label>
-                                <input type="radio" name="owner"   />
+                                <input className={styles.radio} type="radio" name="owner"   />
 
                             </fieldset>
                             <hr />

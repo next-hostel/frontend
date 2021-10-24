@@ -1,39 +1,70 @@
-.mainDiv{
+.mainDiv {
     margin: 0;
     margin-top: 1.5%;
     padding: 5px 0 0 !important;
     background-color: #fdf8f8;
-
-    
 }
 
-.internalDiv{
-    background-color: #fff ;
+.internalDiv {
+    background-color: #fff;
     height: 87vh;
     width: 98vw;
     overflow: hidden;
 }
 
-.main{
+.main {
     padding: 0 7%;
     padding-top: 3%;
     overflow: auto;
     scroll-behavior: smooth;
     height: 85vh;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.bottomBox{
-    padding-bottom: 7%;
+.roomChoseen{
+    margin-bottom: 50px;
 }
 
-.inputFeild{
+.noBed {
+    width: 40%;
+    min-width: 130px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);
+    background-color: #fbe9e9;
+    border: 1px red solid;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 0 4% 4% 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.iconDiv {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-.inputText{  
-    height: 17px;  
+.bedIcon {
+    color: #d1d1d1;
+    margin: 0 4px;
+}
+
+.iconText {
+    font-size: x-large;
+    font-weight: 700;
+    color: #d1d1d1;
+}
+
+.inputText {
+    height: 17px;
     width: 100%;
     color: #606060;
     font-size: 16px;
@@ -48,49 +79,45 @@
     margin-bottom: 40px;
 }
 
-.select{
-    height: 40px;  
-    width: 100%;
-    color: #606060;
-    font-size: 16px;
-    line-height: 30px;
-    position: relative;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #d8d8d8;
-    border-radius: 0;
-    cursor: pointer;
-    padding: 0 30px 0 0;
-    margin-bottom: 40px;
-}
-
-.inputText:active, .inputText:focus{
+.inputText:active, .inputText:focus {
     height: 30px;
-    
     transition: 0.2s;
-
 }
 
-
-
-
-.map{
-    margin-bottom: 40px;
-    height: 230px;
-    width: 415px;
+.checkboxDiv h3{
+    margin: 50px 0;
 }
 
-.required:after{
-    content: "*" ;
-    color: red;
+.checkboxDiv fieldset{
+    padding: 0 30px 0 0;
+    
 }
 
-.searchBtn::after{
-    color: red;
+.checkboxText {
+    height: 17px;
+    width: 100%;
+    color: #606060;
+    font-size: 16px;
+    line-height: 30px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d8d8d8;
+    border-radius: 0;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
-.submitbtn{
+.checkboxText:active {
+    color: red;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
+
+.submitbtn {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -99,21 +126,17 @@
     background-color: white;
     box-shadow: -1px -5px 8px -7px rgb(0 0 0 / 15%);
     padding: 5% 0;
-
 }
 
-.leftArrow{
+.leftArrow {
     font-size: x-large;
     color: grey;
     cursor: pointer;
-    
 }
 
-.des{
+.des {
     background-color: #fdf8f8;
     padding-top: 3%;
-    background-image: url('/images/const.jpg')    ;
+    background-image: url('/images/const.jpg');
     background-repeat: no-repeat;
-
 }
-
