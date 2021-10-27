@@ -22,21 +22,28 @@ const Step1 = () => {
                         <div className={styles.inputFeild}>
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Owner</label>
-                                <input className={styles.radio} type="radio" name="owner"   />
+                                <div className={styles.pp}>
+
+                                    <input className={styles.radio} type="radio" name="owner" />
+                                </div>
 
                             </fieldset>
                             <hr />
 
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Property Manager</label>
-                                <input type="radio" name="owner"   />
-
+                                <div className={styles.pp}>
+                                    <input className={styles.radio} type="radio" name="owner" />
+                                </div>
                             </fieldset>
                             <hr />
 
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Agent</label>
-                                <input type="radio" name="owner"   />
+                                <div className={styles.pp}>
+
+                                    <input className={styles.radio} type="radio" name="owner" />
+                                </div>
 
                             </fieldset>
 
