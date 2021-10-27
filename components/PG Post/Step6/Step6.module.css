@@ -1,0 +1,150 @@
+.mainDiv{
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 5px 0 0 !important;
+    background-color: #fdf8f8;
+
+    
+}
+
+.internalDiv{
+    background-color: #fff ;
+    height: 87vh;
+    width: 98vw;
+    overflow: hidden;
+}
+
+.main{
+    padding: 0 7%;
+    padding-top: 3%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    height: 85vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFeild{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.head{
+    margin-bottom: 40px;
+}
+
+.head::after{
+    content: '*';
+    color: red;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    font-size: 20px;
+    margin: -10px 0 10px;
+    align-items:left;
+    justify-content: space-between;
+}
+.checkbox input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 18px;
+    top: 7px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.checkbox input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 7px;
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.pp{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.pp:after{
+    content: '';
+    visibility: visible;
+}
+.Feild{
+
+    border-bottom: 1px solid rgb(88, 82, 82);
+    padding:5px;
+    margin: 4px;
+    opacity: 80%;
+}
+.PIcon{
+    opacity: 50%;
+    font-weight: 600;
+}
+
+
+
+.des{
+    background-color: #fdf8f8;
+    padding-top: 3%;
+    background-image: url('/images/const.jpg')    ;
+    background-repeat: no-repeat;
+
+}
+
+.submitbtn{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: -1px -5px 8px -7px rgb(0 0 0 / 15%);
+    padding: 5% 0;
+
+}
+
+.leftArrow{
+    font-size: x-large;
+    color: grey;
+    cursor: pointer;
+    
+}
+
+  
+.Feild input[type="radio"]:checked + label {
+    background-color:#bfb;
+    border-color: #4c4;
+}
+
+.radio {
+    border: 5px;
+    width: 20px;
+    height: 2em;
+}
+
+.head1{
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+.head1::after{
+    content: '*';
+    color: red;
+}
