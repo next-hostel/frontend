@@ -93,8 +93,6 @@ const Step1 = () => {
                             </div>
 
 
-
-
                             <div className={`${styles.submitbtn} `}>
                                 <div>
                                     <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
