@@ -71,10 +71,13 @@ const Step5 = () => {
                                     <input type="checkbox" />
                                 </div>
                                 <div className="">
-                                    <p>Gate Closing time</p>
+
                                     <fieldset>
                                         <div className={styles.selectDiv}>
-                                            <select name="noticePeriod" className={`${styles.select} `} placeholder="Select" >
+
+                                            <label className={`${styles.required}`} name="time" >Gate Closing time</label>
+
+                                            <select name="time" className={`${styles.select} `} placeholder="Select" >
 
                                                 <option value="-1">No Closing Time</option>
                                                 <option value="seven">7:00 PM</option>

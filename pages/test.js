@@ -1,12 +1,24 @@
 import Layout from "../components/Layout";
-import Step7 from "../components/PG Post/Step7/Step7";
+import Step8 from "../components/PG Post/Step8/Step8";
+import { useState } from "react";
 
 
 const Test = () => {
     return (
         <>
 
-            <Step7 />
+            <Step8 />
+
+            const [state, setstate] = useState(initialState);
+            const [state, setstate] = useState(initialState);
+
+            const [state, setstate] = useState(initialState);
+
+            const [state, setstate] = useState(initialState);
+
+            console.log("sorry");
+
+
 
         </>
     )
