@@ -4,7 +4,7 @@ import Navbar from '../../Navbar';
 
 
 
-const Step1 = () => {
+const Step6 = () => {
 
 
     return (
@@ -142,4 +142,4 @@ const Step1 = () => {
     )
 }
 
-export default Step1
+export default Step6

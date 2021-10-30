@@ -1,10 +1,9 @@
-import styles from './Step3.module.css';
-import Navbar from '../../Navbar';
+import styles from './Step10.module.css';
+import Navbar from '../../Navbar'
 
 
 
-
-const Step3 = () => {
+const Step1 = () => {
 
 
     return (
@@ -17,42 +16,26 @@ const Step3 = () => {
                 <div className={`${styles.internalDiv} row`}>
 
                     <div className={`${styles.main} col-6`}>
-                        <h3 className={styles.head}>You Are Posting this Pg As </h3>
+                        <h3>Tell us more about your PG</h3>
 
+                        <br />
+                        <p>
+                            Write a brief description of your PG,
+                            including its unique features and benefits,
+                            to help the tenants know your property better.
+                        </p>
+                        <br />
                         <div className={styles.inputFeild}>
-                            <fieldset className={styles.checkbox}>
-                                <label name='1'>Owner</label>
-                                <div className={styles.pp}>
-
-                                    <input className={styles.radio} type="radio" name="owner" />
-                                </div>
+                            <fieldset>
+                                <label className={`${styles.required}`} name="location">PG Description (Min 100 char) </label>
+                                <textarea className={`${styles.inputText} `} type="text" name="location" required />
 
                             </fieldset>
-                            <hr />
 
-                            <fieldset className={styles.checkbox}>
-                                <label name='1'>Property Manager</label>
-                                <div className={styles.pp}>
-                                    <input className={styles.radio} type="radio" name="owner" />
-                                </div>
-                            </fieldset>
-                            <hr />
 
-                            <fieldset className={styles.checkbox}>
-                                <label name='1'>Agent</label>
-                                <div className={styles.pp}>
-
-                                    <input className={styles.radio} type="radio" name="owner" />
-                                </div>
-
-                            </fieldset>
 
 
                         </div>
-
-
-
-
 
 
                         <div className={`${styles.submitbtn} `}>
@@ -63,6 +46,8 @@ const Step3 = () => {
                                 Submit
                             </button>
                         </div>
+
+
 
                     </div>
 
@@ -101,4 +86,4 @@ const Step3 = () => {
     )
 }
 
-export default Step3
+export default Step1

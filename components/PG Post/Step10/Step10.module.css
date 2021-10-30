@@ -1,0 +1,96 @@
+.mainDiv{
+    margin: 0;
+    margin-top: 1.5%;
+    padding: 5px 0 0 !important;
+    background-color: #fdf8f8;
+
+    
+}
+
+.internalDiv{
+    background-color: #fff ;
+    height: 87vh;
+    width: 98vw;
+    overflow: hidden;
+}
+
+.main{
+    padding: 0 7%;
+    padding-top: 3%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 85vh;
+
+}
+
+
+.inputFeild{
+    display: flex;
+    flex-direction: row;
+    height: 46.4vh;
+}
+
+.inputText{  
+    width: 100%;
+    color: #606060;
+    font-size: 16px;
+    line-height: 30px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d8d8d8;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 0 30px 0 0;
+    margin-bottom: 40px;
+    resize: vertical;
+}
+
+
+
+.inputText:active, .inputText:focus{
+    
+    transition: 0.2s;
+    resize: vertical;
+
+}
+
+
+
+
+
+
+.required:after{
+    content: "*" ;
+    color: red;
+}
+
+
+
+.submitbtn{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: -1px -5px 8px -7px rgb(0 0 0 / 15%);
+    padding: 5% 0;
+
+}
+
+.leftArrow{
+    font-size: x-large;
+    color: grey;
+    cursor: pointer;
+    
+}
+
+.des{
+    background-color: #fdf8f8;
+    padding-top: 3%;
+    background-image: url('/images/const.jpg')    ;
+    background-repeat: no-repeat;
+
+}
+

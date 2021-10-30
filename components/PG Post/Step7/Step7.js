@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../Navbar';
 import styles from './Setp7.module.css';
 
-const Step5 = () => {
+const Step7 = () => {
     return (
         <>
             <Navbar />
@@ -145,4 +145,4 @@ const Step5 = () => {
     )
 }
 
-export default Step5
+export default Step7
