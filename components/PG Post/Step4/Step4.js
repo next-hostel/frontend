@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 
-const Step4 = () => {
+const Step4 = ({fromData, setForm, navigation}) => {
 
 
     const [active, setActive] = useState("")
@@ -114,7 +114,7 @@ const Step4 = () => {
 
                                     <div className={styles.iconDiv}>
 
-                                        <i className={`${styles.bedIcon} fas fa-procedures fa-3x`}></i>
+                                        <i className={`${styles.bedIcon} fas fa-procedures fa-3x`} onClick={()=> navigation.prev()}></i>
 
                                     </div>
                                     <div className={styles.iconText}>
@@ -131,7 +131,7 @@ const Step4 = () => {
                                 <div>
                                     <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
                                 </div>
-                                <button className="btn btn-danger " >
+                                <button className="btn btn-danger " onClick={()=> navigation.next()}>
                                     Submit
                                 </button>
                             </div>

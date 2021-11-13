@@ -1,4 +1,4 @@
-import styles from './Setp1.module.css';
+import styles from './Step1.module.css';
 import Navbar from '../../Navbar';
 import { useState } from 'react';
 
@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-const Step1 = () => {
+const Step1 = ({fromData, setForm, navigation}) => {
 
     const [displayPane, setDisplayPane] = useState("displayNone")
 
@@ -95,9 +95,9 @@ const Step1 = () => {
 
                             <div className={`${styles.submitbtn} `}>
                                 <div>
-                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                                 </div>
-                                <button className="btn btn-danger " >
+                                <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                     Submit
                                 </button>
                             </div>

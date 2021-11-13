@@ -1,7 +1,7 @@
-import styles from './Setp2.module.css'
+import styles from './Step2.module.css'
 import Navbar from '../../Navbar'
 
-const Step2 = () => {
+const Step2 = ({fromData, setForm, navigation}) => {
     return (
         <>
             <Navbar />
@@ -31,9 +31,9 @@ const Step2 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                 Submit
                             </button>
                         </div>

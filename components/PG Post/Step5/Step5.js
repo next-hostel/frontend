@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../Navbar';
 import styles from './Step5.module.css';
 
-const Step5 = () => {
+const Step5 = ({fromData, setForm, navigation}) => {
     return (
         <>
             <Navbar />
@@ -114,9 +114,9 @@ const Step5 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                 Submit
                             </button>
                         </div>

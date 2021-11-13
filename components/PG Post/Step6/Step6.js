@@ -4,7 +4,7 @@ import Navbar from '../../Navbar';
 
 
 
-const Step6 = () => {
+const Step6 = ({fromData, setForm, navigation}) => {
 
 
     return (
@@ -98,9 +98,9 @@ const Step6 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                 Submit
                             </button>
                         </div>
