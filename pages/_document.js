@@ -25,10 +25,13 @@ class MyDocument extends Document {
           <NextScript />
 
 
-          <script src="https://code.jquery.com/jquery-3.5.1.js"
+          {/* <script src="https://code.jquery.com/jquery-3.5.1.js"
                 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
                  crossOrigin="anonymous">
-           </script>
+           </script> */}
+
+           {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiauuQCPEI2G8GuZtcaIh8tQnl2e2QkEw" type="text/javascript"></script> */}
+
 
 
           
