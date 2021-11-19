@@ -4,7 +4,13 @@ import Navbar from '../../Navbar';
 
 
 
-const Step6 = () => {
+const Step6 = ({formData, setForm, navigation}) => {
+
+const {
+    gender,
+    student
+
+} = formData;
 
 
     return (
@@ -25,7 +31,7 @@ const Step6 = () => {
                             <fieldset className={styles.checkbox}>
                                 <i className={`${styles.PIcon} fas fa-mars fa-2x`}></i>
                                 <label name='1'>Male</label>
-                                <input className={styles.radio} type="radio" name="owner"   />
+                                <input className={styles.radio} type="radio" name="gender"   />
 
                             </fieldset>
                             </div>
@@ -35,7 +41,7 @@ const Step6 = () => {
                             <fieldset className={styles.checkbox}>
                                 <i className={`${styles.PIcon} fas fa-venus fa-2x`}></i>
                                 <label name='1'>Female</label>
-                                <input className={styles.radio} type="radio" name="owner"   />
+                                <input className={styles.radio} type="radio" name="gender"   />
 
                             </fieldset>
                             </div>
@@ -44,7 +50,7 @@ const Step6 = () => {
                             <fieldset className={styles.checkbox}>
                                 <i className={`${styles.PIcon} fas fa-venus-mars fa-2x`}></i>
                                 <label name='1'>Both</label>
-                                <input className={styles.radio} type="radio" name="owner"   />
+                                <input className={styles.radio} type="radio" name="gender"   />
 
                             </fieldset>
                             </div>
@@ -98,9 +104,9 @@ const Step6 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                 Submit
                             </button>
                         </div>

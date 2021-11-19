@@ -1,4 +1,4 @@
-import styles from './Setp1.module.css';
+import styles from './Step1.module.css';
 import Navbar from '../../Navbar';
 import { useState } from 'react';
 
@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-const Step1 = () => {
+const Step1 = ({formData, setForm, navigation}) => {
 
     const [displayPane, setDisplayPane] = useState("displayNone")
 
@@ -19,6 +19,13 @@ const Step1 = () => {
         }
     }
 
+    const {location,
+        address,
+        pincode,
+        landmark,
+        startTime} = formData;
+
+       
     return (
         <>
             <Navbar />
@@ -37,7 +44,7 @@ const Step1 = () => {
                         <div className={styles.inputFeild}>
                             <fieldset>
                                 <label className={`${styles.required}`} name="location">Enter Locality</label>
-                                <input className={`${styles.inputText} `} type="text" name="location" required />
+                                <input className={`${styles.inputText} `} type="text" name="location" onChange={setForm} required />
 
                             </fieldset>
 
@@ -53,25 +60,25 @@ const Step1 = () => {
 
                                 <fieldset>
                                     <label className={`${styles.required}`} name="address">Address</label>
-                                    <input className={`${styles.inputText} `} type="text" name="address" required />
+                                    <input className={`${styles.inputText} `} type="text" name="address" onChange={setForm} required />
 
                                 </fieldset>
 
                                 <fieldset>
                                     <label className={`${styles.required}`} name="pincode">Pincode</label>
-                                    <input className={`${styles.inputText} `} type="number" name="pincode" required />
+                                    <input className={`${styles.inputText} `} type="number" name="pincode" onChange={setForm} required />
 
                                 </fieldset>
 
                                 <fieldset>
                                     <label className={``} name="landmark">Landmark</label>
-                                    <input className={`${styles.inputText} `} type="text" name="landmark" required />
+                                    <input className={`${styles.inputText} `} type="text" name="landmark" onChange={setForm} required />
 
                                 </fieldset>
 
                                 <fieldset>
                                     <label className={`${styles.required}`} name="startTime">PG Operational</label>
-                                    <input className={`${styles.inputText} `} type="text" name="startTime" required />
+                                    <input className={`${styles.inputText} `} type="text" name="startTime" onChange={setForm} required />
 
                                 </fieldset>
 
@@ -95,9 +102,9 @@ const Step1 = () => {
 
                             <div className={`${styles.submitbtn} `}>
                                 <div>
-                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.previous()}></i>
                                 </div>
-                                <button className="btn btn-danger " >
+                                <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                     Submit
                                 </button>
                             </div>

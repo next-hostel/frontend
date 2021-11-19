@@ -4,7 +4,8 @@ import Navbar from '../../Navbar';
 
 
 
-const Step3 = () => {
+const Step3 = ({formData, setForm, navigation}) => {
+    const {owner} = formData;
 
 
     return (
@@ -24,7 +25,7 @@ const Step3 = () => {
                                 <label name='1'>Owner</label>
                                 <div className={styles.pp}>
 
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
 
                             </fieldset>
@@ -33,7 +34,7 @@ const Step3 = () => {
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Property Manager</label>
                                 <div className={styles.pp}>
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
                             </fieldset>
                             <hr />
@@ -42,7 +43,7 @@ const Step3 = () => {
                                 <label name='1'>Agent</label>
                                 <div className={styles.pp}>
 
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
 
                             </fieldset>
@@ -57,9 +58,9 @@ const Step3 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={()=> navigation.next()}>
                                 Submit
                             </button>
                         </div>

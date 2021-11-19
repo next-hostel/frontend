@@ -3,7 +3,11 @@ import Navbar from '../../Navbar'
 
 
 
-const Step1 = () => {
+const Step10 = ({ formData, setForm, navigation }) => {
+
+    const {
+        pg_location
+    } = formData;
 
 
     return (
@@ -28,7 +32,7 @@ const Step1 = () => {
                         <div className={styles.inputFeild}>
                             <fieldset>
                                 <label className={`${styles.required}`} name="location">PG Description (Min 100 char) </label>
-                                <textarea className={`${styles.inputText} `} type="text" name="location" required />
+                                <textarea className={`${styles.inputText} `} type="text" name="pg_location" required  onChange={setForm}/>
 
                             </fieldset>
 
@@ -40,9 +44,9 @@ const Step1 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={() => navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={() => navigation.next()} >
                                 Submit
                             </button>
                         </div>
@@ -86,4 +90,4 @@ const Step1 = () => {
     )
 }
 
-export default Step1
+export default Step10

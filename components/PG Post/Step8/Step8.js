@@ -2,7 +2,20 @@ import React from 'react'
 import Navbar from '../../Navbar';
 import styles from './Step8.module.css';
 
-const Step8 = () => {
+const Step8 = ({ formData, setForm, navigation }) => {
+
+    const {
+        laundry,
+        roomCleaning,
+        warden,
+        breakfast,
+        lunch,
+        dinner,
+        vegNonVeg,
+        food_charge
+    } = formData;
+
+
     return (
         <>
             <Navbar />
@@ -19,19 +32,19 @@ const Step8 = () => {
                         <div className={styles.checkBoxDiv}>
                             <fieldset>
                                 <label className={``} name="laundry">Laundry</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="laundry" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="laundry" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="roomCleaning">Room Cleaning</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="roomCleaning" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="roomCleaning" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="warden">Warden</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="warden" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="warden" onChange={setForm} />
 
                             </fieldset>
 
@@ -47,17 +60,17 @@ const Step8 = () => {
                                     <div className={styles.selectDiv}>
                                         <fieldset>
                                             <label className={``} name="breakfast">Breakfast</label>
-                                            <input className={`${styles.checkboxText} `} type="checkbox" name="breakfast" />
+                                            <input className={`${styles.checkboxText} `} type="checkbox" name="breakfast" onChange={setForm}/>
 
                                         </fieldset>
                                         <fieldset>
                                             <label className={``} name="lunch">Lunch</label>
-                                            <input className={`${styles.checkboxText} `} type="checkbox" name="lunch" />
+                                            <input className={`${styles.checkboxText} `} type="checkbox" name="lunch" onChange={setForm} />
 
                                         </fieldset>
                                         <fieldset>
                                             <label className={``} name="dinner">Dinner</label>
-                                            <input className={`${styles.checkboxText} `} type="checkbox" name="dinner" />
+                                            <input className={`${styles.checkboxText} `} type="checkbox" name="dinner" onChange={setForm} />
 
                                         </fieldset>
                                     </div>
@@ -67,7 +80,7 @@ const Step8 = () => {
 
                                             <label className={`${styles.required}`} name="vegNonVeg" >Veg/NonVeg food provided</label>
 
-                                            <select name="vegNonVeg" className={`${styles.select} `} placeholder="Select" >
+                                            <select name="vegNonVeg" className={`${styles.select} `} placeholder="Select" onChange={setForm} >
 
                                                 <option value="-1">Select</option>
                                                 <option value="veg">Veg</option>
@@ -83,7 +96,7 @@ const Step8 = () => {
 
                                             <label className={`${styles.required}`} name="food_charge" >Food Charges</label>
 
-                                            <select name="food_charge" className={`${styles.select} `} placeholder="Select" >
+                                            <select name="food_charge" className={`${styles.select} `} placeholder="Select" onChange={setForm} >
 
                                                 <option value="-1">Select</option>
                                                 <option value="inRent">Include in Rent</option>
@@ -105,9 +118,9 @@ const Step8 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={() => navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={() => navigation.next()} >
                                 Submit
                             </button>
                         </div>

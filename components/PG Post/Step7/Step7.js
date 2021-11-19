@@ -1,8 +1,18 @@
 import React from 'react'
 import Navbar from '../../Navbar';
-import styles from './Setp7.module.css';
+import styles from './Step7.module.css';
 
-const Step7 = () => {
+const Step7 = ({ formData, setForm, navigation }) => {
+
+    const {
+        vegOnly,
+        noSmoking,
+        bearveg,
+        oppoSexAllow,
+        ParentsAllowed,
+        noticePeriod,
+        time} = formData;
+
     return (
         <>
             <Navbar />
@@ -19,38 +29,38 @@ const Step7 = () => {
                         <div className={styles.checkBoxDiv}>
                             <fieldset>
                                 <label className={``} name="vegOnly">Veg Only</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="vegOnly" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="vegOnly" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="noSmoking">No Smoking</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="noSmoking" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="noSmoking" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="bearveg">Drinking alcohol not allowed</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="bearveg" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="bearveg" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="oppoSexAllow">Entry of opposite gender not allowed</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="oppoSexAllow" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="oppoSexAllow" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="ParentsAllowed">Guardian not allowed</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="ParentsAllowed" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="ParentsAllowed" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <div className={styles.selectDiv}>
                                     <label className={`${styles.required}`} name="noticePeriod" >Select Notice Period</label>
-                                    <select name="noticePeriod" className={`${styles.select} `} placeholder="Select" >
+                                    <select name="noticePeriod" className={`${styles.select} `} placeholder="Select" onChange={setForm} >
 
                                         <option value="-1">Select</option>
                                         <option value="oneWeek">1 Week</option>
@@ -77,7 +87,7 @@ const Step7 = () => {
 
                                             <label className={`${styles.required}`} name="time" >Gate Closing time</label>
 
-                                            <select name="time" className={`${styles.select} `} placeholder="Select" >
+                                            <select name="time" className={`${styles.select} `} placeholder="Select" onChange={setForm} >
 
                                                 <option value="-1">No Closing Time</option>
                                                 <option value="seven">7:00 PM</option>
@@ -101,9 +111,9 @@ const Step7 = () => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={() => navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " >
+                            <button className="btn btn-danger " onClick={() => navigation.next()}>
                                 Submit
                             </button>
                         </div>
