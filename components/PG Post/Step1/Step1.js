@@ -104,7 +104,7 @@ const Step1 = ({formData, setForm, navigation}) => {
                                 <div>
                                     <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.previous()}></i>
                                 </div>
-                                <button className="btn btn-danger " onClick={print} >
+                                <button className="btn btn-danger " onClick={()=> navigation.next()} >
                                     Submit
                                 </button>
                             </div>
