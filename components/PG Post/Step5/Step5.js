@@ -2,7 +2,20 @@ import React from 'react'
 import Navbar from '../../Navbar';
 import styles from './Step5.module.css';
 
-const Step5 = ({fromData, setForm, navigation}) => {
+const Step5 = ({ formData, setForm, navigation }) => {
+    const {
+        airCooler,
+        noOfBed,
+        rent,
+        security,
+        Geyser,
+        Washrooms,
+        cupboard,
+        tv,
+        ac,
+        cot,
+        mattress,
+        sideTable } = formData;
     return (
         <>
             <Navbar />
@@ -34,19 +47,19 @@ const Step5 = ({fromData, setForm, navigation}) => {
                         <div>
                             <fieldset>
                                 <label className={`${styles.required}`} name="noOfBed">No. of twin sharing rooms in PG</label>
-                                <input className={`${styles.inputText} `} type="number" name="noOfBed" required />
+                                <input className={`${styles.inputText} `} type="number" name="noOfBed" onChange={setForm} required />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={`${styles.required}`} name="rent">Monthly Rent Per Bed (₹)</label>
-                                <input className={`${styles.inputText} `} type="number" name="rent" required />
+                                <input className={`${styles.inputText} `} type="number" name="rent" onChange={setForm} required />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={`${styles.required}`} name="security">Security Deposit Per Bed (₹)</label>
-                                <input className={`${styles.inputText} `} type="number" name="security" required />
+                                <input className={`${styles.inputText} `} type="number" name="security" onChange={setForm} required />
 
                             </fieldset>
                         </div>
@@ -56,55 +69,55 @@ const Step5 = ({fromData, setForm, navigation}) => {
 
                             <fieldset>
                                 <label className={``} name="Geyser">Geyser</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="Geyser" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="Geyser"  onChange={setForm}/>
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="Washrooms">Washrooms</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="Washrooms" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="Washrooms" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="cupboard">Cupboard</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="cupboard" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="cupboard" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="tv">TV</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="tv" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="tv" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="ac">AC</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="ac" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="ac" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="cot">Cot</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="cot" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="cot" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="mattress">Mattress</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="mattress" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="mattress" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="sideTable">Side Table</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="sideTable" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="sideTable" onChange={setForm} />
 
                             </fieldset>
 
                             <fieldset>
                                 <label className={``} name="airCooler">Air Cooler</label>
-                                <input className={`${styles.checkboxText} `} type="checkbox" name="airCooler" />
+                                <input className={`${styles.checkboxText} `} type="checkbox" name="airCooler" onChange={setForm} />
 
                             </fieldset>
 
@@ -114,9 +127,9 @@ const Step5 = ({fromData, setForm, navigation}) => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={() => navigation.prev()}></i>
                             </div>
-                            <button className="btn btn-danger " onClick={()=> navigation.next()} >
+                            <button className="btn btn-danger " onClick={() => navigation.next()} >
                                 Submit
                             </button>
                         </div>

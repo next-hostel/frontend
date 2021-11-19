@@ -4,7 +4,8 @@ import Navbar from '../../Navbar';
 
 
 
-const Step3 = ({fromData, setForm, navigation}) => {
+const Step3 = ({formData, setForm, navigation}) => {
+    const {owner} = formData;
 
 
     return (
@@ -24,7 +25,7 @@ const Step3 = ({fromData, setForm, navigation}) => {
                                 <label name='1'>Owner</label>
                                 <div className={styles.pp}>
 
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
 
                             </fieldset>
@@ -33,7 +34,7 @@ const Step3 = ({fromData, setForm, navigation}) => {
                             <fieldset className={styles.checkbox}>
                                 <label name='1'>Property Manager</label>
                                 <div className={styles.pp}>
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
                             </fieldset>
                             <hr />
@@ -42,7 +43,7 @@ const Step3 = ({fromData, setForm, navigation}) => {
                                 <label name='1'>Agent</label>
                                 <div className={styles.pp}>
 
-                                    <input className={styles.radio} type="radio" name="owner" />
+                                    <input className={styles.radio} type="radio" name="owner" onChange={setForm} />
                                 </div>
 
                             </fieldset>

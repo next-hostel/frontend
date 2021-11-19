@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 
-const Step4 = ({fromData, setForm, navigation}) => {
+const Step4 = ({formData, setForm, navigation}) => {
 
 
     const [active, setActive] = useState("")
