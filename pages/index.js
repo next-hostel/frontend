@@ -23,7 +23,7 @@ export default function Home() {
 
   ]
 
-  function myArrow({ type, onClick, isEdge }) {
+  function myArrow ({ type, onClick, isEdge }) {
     const pointer = type === consts.PREV ? <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i> : <i className={`${styles.rightArrow} fas fa-long-arrow-alt-right`}></i>
     return (
       <button onClick={onClick} disabled={isEdge} className={styles.myArrow}>
@@ -201,7 +201,7 @@ export default function Home() {
               <div className={styles.locName}>
                 <h6>Location name</h6>
                 <p>No. of Hostel</p>
-              </div>
+              </div >
 
             </div>
 
@@ -275,7 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-
+     
 
 
       <section>
