@@ -10,7 +10,7 @@ import Step7 from '../Step7/Step7'
 import Step8 from '../Step8/Step8'
 import Step10 from '../Step10/Step10'
 
-const defaultData = {
+const defaultData = { 
   location: '',
   address: '',
   pincode: '',
