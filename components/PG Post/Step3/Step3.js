@@ -10,6 +10,7 @@ const Step3 = ({formData, setForm, navigation}) => {
 
     return (
         <>
+        
             <Navbar />
 
             <div className={`${styles.mainDiv} container-fluid`}>
@@ -58,7 +59,7 @@ const Step3 = ({formData, setForm, navigation}) => {
 
                         <div className={`${styles.submitbtn} `}>
                             <div>
-                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.prev()}></i>
+                                <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.previous()}></i>
                             </div>
                             <button className="btn btn-danger " onClick={()=> navigation.next()}>
                                 Submit

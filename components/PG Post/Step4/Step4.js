@@ -114,7 +114,7 @@ const Step4 = ({formData, setForm, navigation}) => {
 
                                     <div className={styles.iconDiv}>
 
-                                        <i className={`${styles.bedIcon} fas fa-procedures fa-3x`} onClick={()=> navigation.prev()}></i>
+                                        <i className={`${styles.bedIcon} fas fa-procedures fa-3x`} ></i>
 
                                     </div>
                                     <div className={styles.iconText}>
@@ -129,7 +129,7 @@ const Step4 = ({formData, setForm, navigation}) => {
                         
                         <div className={`${styles.submitbtn} `}>
                                 <div>
-                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`}></i>
+                                    <i className={`${styles.leftArrow} fas fa-long-arrow-alt-left`} onClick={()=> navigation.previous()}></i>
                                 </div>
                                 <button className="btn btn-danger " onClick={()=> navigation.next()}>
                                     Submit
